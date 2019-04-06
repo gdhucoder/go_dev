@@ -6,6 +6,11 @@ import (
 	a "go_dev/day2/example2/add"
 )
 
+// 执行main之前，默认执行init函数
+func init() {
+	fmt.Println("in main initialized")
+}
+
 func main() {
 	a.Test()
 	fmt.Println("您的名字是", a.Name)
