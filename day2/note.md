@@ -10,3 +10,6 @@ func add(a int, b int) (int, int){}
 
 const修饰，永远是只读的，不能修改。
 
+包的别名
+
+调用顺序
