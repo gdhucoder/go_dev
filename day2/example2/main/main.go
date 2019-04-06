@@ -12,6 +12,7 @@ func init() {
 }
 
 func main() {
+	// 观察执行的顺序 test add main
 	a.Test()
 	fmt.Println("您的名字是", a.Name)
 	fmt.Println("您的年龄是", a.Age)
