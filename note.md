@@ -36,3 +36,9 @@ fmt.Println(ss)
 adfadsf \n \n
 ```
 
+build 代码
+go build D:\project\src\go_dev\day3\example4
+
+执行代码
+D:\project\example4.exe
+
