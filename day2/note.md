@@ -22,3 +22,8 @@ var(
     e = "hello world"
 )
 
+
+a := 100 这个语句其实是两条语句，等价于
+
+var a int
+a = 100
