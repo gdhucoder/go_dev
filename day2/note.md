@@ -27,3 +27,12 @@ a := 100 这个语句其实是两条语句，等价于
 
 var a int
 a = 100
+
+```go
+var ss = `adfadsf \n \n` // 原样输出
+fmt.Println(ss)
+
+输出
+adfadsf \n \n
+```
+

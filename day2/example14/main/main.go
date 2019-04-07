@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func genRandInt(n int) {
@@ -11,6 +12,7 @@ func genRandInt(n int) {
 	}
 }
 
+// 小于100的10个随机整数
 func genRanInt10() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(rand.Intn(10))
@@ -23,9 +25,25 @@ func genRanFloat() {
 	}
 }
 
+// 初始化的
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
+
 func main() {
-	rand.Seed(0)
 	genRandInt(10)
 	genRanInt10()
 	genRanFloat()
+
+	var ss = `adfadsf \n \n` // 原样输出
+	fmt.Println(ss)
+
+	//
+	var string1 = `
+	我是小熊熊，
+	你是小naughty，
+	你要不听话，
+	我也没办法。
+	`
+	fmt.Println(string1)
 }
