@@ -55,4 +55,6 @@ var p \*int = &a
 
 *p = 5 ， p = 0xffff
 
+非常重要：
+
 map slice chan 指针 interface默认以引用的方式传递
