@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// 自定义类型
+// 自定义类型，函数是一种数据类型
 type op_func func(int, int) int
 
 func add(a, b int) int {
@@ -30,5 +30,12 @@ func main() {
 
 	sub := operator(sub, 102, 1)
 	fmt.Println(sub)
+
+	// 30
+	// 202
+	// 101
+
+	fmt.Println(c)
+	fmt.Println(add)
 
 }
