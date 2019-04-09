@@ -43,3 +43,14 @@ go build D:\project\src\go_dev\day3\example4
 执行代码
 D:\project\example4.exe
 
+
+获取变量的地址，使用&
+
+获取指针类型所指向的值，使用*
+
+var *p int，使用\*p获取p指向的值
+
+var a int = 5
+var p \*int = &a
+
+*p = 5 ， p = 0xffff
