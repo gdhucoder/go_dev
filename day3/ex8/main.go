@@ -16,4 +16,13 @@ func main() {
 	printAdd(&a)
 	changeVal(&a)
 	fmt.Println(a)
+
+	// 指针类型
+	var p *int
+	p = &a
+	fmt.Println(*p)
+
+	*p = 100
+	fmt.Println(a)
+
 }
