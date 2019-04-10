@@ -33,6 +33,7 @@ func add(a, b string) string {
 	return res
 }
 
+// 对其两个输入的字符串
 func equalLength(a, b *string) {
 	diff := len(*a) - len(*b)
 	if diff > 0 {

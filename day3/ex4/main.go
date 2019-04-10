@@ -11,7 +11,7 @@ func test() {
 
 func main() {
 	now := time.Now()
-	// 固定
+	// 固定，这个格式，这个是go语言诞生的时间
 	fmt.Println(now.Format("2006/01/02 15:04:05"))
 
 	// 统计程序的执行耗时

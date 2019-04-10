@@ -6,7 +6,7 @@ import (
 
 func isHuiWen(str string) bool {
 
-	// 变量字符串类型使用 rune
+	// 变量字符串类型使用 rune，不论中英文，就是一个字符
 	s := []rune(str)
 	fmt.Println(s)
 	fmt.Println(len(s))
