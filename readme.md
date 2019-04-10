@@ -1,7 +1,5 @@
 # Go语言学习笔记
 
-
-
 ## day01 
 
 入门 goroutine 等等
@@ -32,4 +30,3 @@ package介绍
 
 
 :bear::whale::dolphin:
-
