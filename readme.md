@@ -20,6 +20,16 @@ go中的时间和日期类型
 
 函数详解
 
+## day04
+
+内置函数、递归函数、闭包
+
+数组与切片
+
+map数据结构
+
+package介绍
+
 
 :bear::whale::dolphin:
 
