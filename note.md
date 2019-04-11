@@ -58,3 +58,11 @@ var p \*int = &a
 非常重要：
 
 map slice chan 指针 interface默认以引用的方式传递
+
+
+https://gobyexample.com/closures
+
+https://en.wikipedia.org/wiki/Anonymous_function
+
+https://en.wikipedia.org/wiki/Closure_(computer_programming)
+
