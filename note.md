@@ -66,3 +66,5 @@ https://en.wikipedia.org/wiki/Anonymous_function
 
 https://en.wikipedia.org/wiki/Closure_(computer_programming)
 
+![2019-04-12-001](https://gitee.com/gdhu/prvpic/raw/master/2019-04-12-001.jpg)
+
