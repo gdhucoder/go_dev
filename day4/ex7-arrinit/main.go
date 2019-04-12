@@ -23,6 +23,27 @@ func test() {
 
 }
 
+// 二维数组的初始化和遍历
+func testMulArr() {
+	var a = [2][5]int{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}}
+	fmt.Println(a)
+
+	var b = [...][5]int{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}}
+	fmt.Println(b)
+
+	for i, v := range a {
+		for j, v1 := range v {
+			fmt.Printf("(%d ,%d)-->%d ", i, j, v1)
+		}
+		fmt.Println()
+	}
+
+}
+
 func main() {
+
+	// 数组的各种初始化
 	test()
+	// 二维数组的初始化和遍历
+	testMulArr()
 }
