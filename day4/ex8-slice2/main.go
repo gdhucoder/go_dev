@@ -32,7 +32,15 @@ func testCopy() {
 
 }
 
+// 关于创建切片
+func testMake() {
+	a := make([]int, 2, 10) // 创建切片
+	fmt.Printf("len %d, capacity %d\n", len(a), cap(a))
+	// len 2, capacity 10
+}
+
 func main() {
+	testMake() // 观察 make 的使用 len 和 cap 参数
 	testCopy()
 	testAppend()
 	test()

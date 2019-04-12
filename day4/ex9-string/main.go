@@ -12,6 +12,8 @@ func testString() {
 }
 
 func testModifyString() {
+
+	// 英文字符
 	s := "hello world"
 	//	s[1] = 'E' // 字符串是不可变的
 	s1 := []byte(s) // 转换成byte数组，是可变的了
@@ -19,6 +21,7 @@ func testModifyString() {
 	str := string(s1)
 	fmt.Println(str)
 
+	// 中文字符
 	s = "我在深圳，hello"
 	s2 := []rune(s)
 	s2[0] = '你'
