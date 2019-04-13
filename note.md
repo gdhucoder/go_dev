@@ -1,3 +1,5 @@
+# Go Lang 笔记
+
 func add(){}
 
 func add(a int, b int) int {}
@@ -68,3 +70,11 @@ https://en.wikipedia.org/wiki/Closure_(computer_programming)
 
 ![2019-04-12-001](https://gitee.com/gdhu/prvpic/raw/master/2019-04-12-001.jpg)
 
+## 关于锁
+
+```go
+	// 用读写锁效率： 109976 次， 读请求多的时候效率相差近100倍！
+	fmt.Printf("使用读写锁效率: %d 次\n", atomic.LoadInt32(&count)) //
+	// 使用互斥锁效率: 1164 次
+	fmt.Printf("使用互斥锁效率: %d 次\n", atomic.LoadInt32(&count)) //
+```

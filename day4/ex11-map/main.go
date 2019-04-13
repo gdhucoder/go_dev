@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 type userinfo map[string]map[string]string
 
@@ -78,9 +81,78 @@ func testMap4() {
 
 }
 
+func testMap5() {
+	// 切片中的元素是map
+	var a []map[int]int
+	a = make([]map[int]int, 5) // 初始化
+	if a[0] == nil {
+		a[0] = make(map[int]int, 5)
+	}
+	a[0][1] = 2
+	fmt.Println(a)
+	// [map[1:2] map[] map[] map[] map[]]
+}
+
+func testMapSort() {
+	var a map[int]int
+	a = make(map[int]int, 5)
+	a[0] = 0
+	a[1] = 0
+	a[2] = 0
+	a[3] = 0
+	a[4] = 0
+
+	var keys []int
+
+	// map 中的key是无序的
+	for k1, v := range a {
+		fmt.Println(k1, v)
+		keys = append(keys, k1)
+	}
+
+	sort.Ints(keys)
+
+	for v := range keys {
+		fmt.Println(v, a[v])
+	}
+
+	// 未排序
+	// 1 0
+	// 2 0
+	// 3 0
+	// 4 0
+	// 0 0
+
+	// 排序后
+	// 0 0
+	// 1 0
+	// 2 0
+	// 3 0
+	// 4 0
+
+}
+
+func testMapReverse() {
+	var a map[string]int
+	a = make(map[string]int, 5)
+	a["adf"] = 123
+	a["ddd"] = 22
+
+	var b map[int]string
+	b = make(map[int]string, 5)
+	for k, v := range a {
+		b[v] = k
+	}
+	fmt.Println(a)
+	fmt.Println(b)
+}
+
 func main() {
 	// testMap()
 	// testMap2()
 	// testMap3()
-	testMap4()
+	// testMap4()
+	// testMap5()
+	// testMapSort()
+	testMapReverse()
 }
