@@ -49,6 +49,54 @@ func insertHead(p *Student) *Student {
 	return head
 }
 
+// 不能直接传入head的副本
+// 想修改head的值需要传入head的指针
+// 二级指针就够复杂了
+func insertHead_V2(p **Student) {
+	for i := 0; i < 10; i++ {
+		var stu *Student = &Student{
+			Name:  fmt.Sprintf("stu%d", i),
+			Age:   rand.Intn(100),
+			Score: rand.Float32() * 100,
+		}
+		stu.next = *p
+		*p = stu
+		fmt.Printf(" head address %p\n", *p)
+	}
+}
+
+// 可能涉及到头结点变动的问题
+func del(p *Student) {
+	var prev *Student = p
+	for p != nil {
+		if p.Name == "stu6" {
+			prev.next = p.next
+			break
+		} else {
+			prev = p
+			p = p.next
+		}
+	}
+}
+
+// 可能涉及到头结点变动的问题
+func insert(p *Student) {
+	for p != nil {
+		if p.Name == "stu5" {
+			stu := &Student{
+				Name:  "huguoodng",
+				Age:   33,
+				Score: 999,
+			}
+			stu.next = p.next
+			p.next = stu
+			break
+		} else {
+			p = p.next
+		}
+	}
+}
+
 func main() {
 	var head *Student = &Student{
 		Name:  "wtw",
@@ -60,7 +108,17 @@ func main() {
 
 	// insertTail(tail)
 
-	head = insertHead(head)
+	// head = insertHead(head)
+
+	insertHead_V2(&head)
+
+	traverse(head)
+
+	del(head)
+
+	traverse(head)
+
+	insert(head)
 
 	traverse(head)
 
