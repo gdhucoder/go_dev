@@ -28,5 +28,11 @@ map数据结构
 
 package介绍
 
+## day05
+
+结构体和方法
+
+接口
+
 
 :bear::whale::dolphin:

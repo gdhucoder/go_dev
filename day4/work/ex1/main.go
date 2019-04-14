@@ -19,6 +19,7 @@ func BubbleSort(a []int) {
 }
 
 // 实现一个选择排序
+// 每次选择最大或者最小的数
 func SelectionSort(a []int) {
 	for i := 0; i < len(a); i++ {
 		maxIdx := 0
