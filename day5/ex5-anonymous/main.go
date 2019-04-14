@@ -11,7 +11,7 @@ type Car struct {
 }
 
 type Train struct {
-	Car   // 匿名变量
+	Car   // 匿名变量（字段）
 	int   // 匿名变量
 	Start time.Time
 }
