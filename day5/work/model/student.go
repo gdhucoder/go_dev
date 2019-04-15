@@ -12,3 +12,8 @@ type Student struct {
 	Sex           int         // 0 female 1 male
 	BooksBorrowed []book.Book // 借了几本书
 }
+
+func InitStudent() []Student {
+	var students []Student
+
+}
