@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type Test interface {
+	// 要实现接口中所有的函数
 	Print()
 	Sleep()
 }
@@ -35,7 +36,7 @@ func (p *People) Sleep() {
 
 func main() {
 	var t Test
-	t.Print() // 接口就是一个地址（指针）
+	// t.Print() // 接口就是一个地址（指针）
 	var stu Student
 	stu.Name = "huguodong"
 	stu.Age = 33
