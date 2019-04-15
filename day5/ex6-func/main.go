@@ -51,4 +51,5 @@ func main() {
 
 	a.set(10000)
 	a.print()
+	// 10000
 }
