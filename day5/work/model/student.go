@@ -1,8 +1,4 @@
-package student
-
-import (
-	"go_dev/day5/work/book"
-)
+package model
 
 type Student struct {
 	Id            string // 学号
