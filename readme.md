@@ -30,9 +30,12 @@ package介绍
 
 ## day05
 
-结构体和方法
+###  结构体和方法
+
+golang中的struct没有构造函数，一般可以使用工厂模式来解决这个问题
 
 接口
 
+## day06
 
 :bear::whale::dolphin:

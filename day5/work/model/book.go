@@ -87,6 +87,17 @@ func InitBook() []Book {
 	return books
 }
 
+func CreateNewBook(name string, author string, issuedate string, copy int) *Book {
+	var book *Book = &Book{
+		Name:      name,
+		Author:    author,
+		Copy:      copy,
+		IssueDate: issuedate,
+		InNum:     copy,
+	}
+	return book
+}
+
 func AddNewBook(books []Book, newBook Book) []Book {
 	res := FindBookByName(books, newBook.Name)
 	if len(res) == 0 { // 不存在
@@ -96,7 +107,6 @@ func AddNewBook(books []Book, newBook Book) []Book {
 		res[0].AddNewCopy()
 		return books
 	}
-
 }
 
 func FindBookByName(books []Book, name string) []Book {
@@ -116,4 +126,8 @@ func FindBookByAuthor(books []Book, author string) []Book {
 
 func FindBookByIssueDate(books []Book, start string, end string) []Book {
 	return nil
+}
+
+func BorrowedBy(books []Book, students []Student) {
+
 }
