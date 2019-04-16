@@ -41,4 +41,6 @@ func main() {
 	// write data
 
 	Test(file)
+	v, ok := rw.(ReaderWriter)
+	fmt.Println(v, ok) // &{} true
 }

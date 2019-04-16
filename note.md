@@ -78,3 +78,7 @@ https://en.wikipedia.org/wiki/Closure_(computer_programming)
 	// 使用互斥锁效率: 1164 次
 	fmt.Printf("使用互斥锁效率: %d 次\n", atomic.LoadInt32(&count)) //
 ```
+
+## 关于interface
+
+空接口没有任何方法，所有类型都实现了空接口
