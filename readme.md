@@ -38,4 +38,8 @@ golang中的struct没有构造函数，一般可以使用工厂模式来解决�
 
 ## day06
 
+接口
+
+多态
+
 :bear::whale::dolphin:
