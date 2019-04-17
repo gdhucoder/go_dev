@@ -1,13 +1,14 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"reflect"
 )
 
 // Student
 type Student struct {
-	Name  string
+	Name  string `json:"student_name"`
 	Age   int
 	Score float64
 }
@@ -26,6 +27,8 @@ func (s *Student) Set(name string, age int, socre float64) {
 }
 
 func testStuReflect(a interface{}) {
+
+	t := reflect.TypeOf(a)
 	v := reflect.ValueOf(a)
 	kd := v.Elem().Kind()
 	fmt.Println(kd)
@@ -53,6 +56,9 @@ func testStuReflect(a interface{}) {
 
 	v.Method(1).Call(params)          // 通过方法的序号调用方法
 	v.MethodByName("Print").Call(nil) // 通过名字调用方法
+
+	tag := t.Elem().Field(0).Tag.Get("json")
+	fmt.Println("tag: ", tag)
 }
 
 func main() {
@@ -65,4 +71,7 @@ func main() {
 	// 通过反射修改值
 	testStuReflect(stu)
 	fmt.Println(stu)
+	data, _ := json.Marshal(stu)
+	fmt.Println(string(data))
+	// {"student_name":"wtw","Age":1,"Score":988.8}
 }
