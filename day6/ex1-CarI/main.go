@@ -77,4 +77,6 @@ func main() {
 	test = bmw   // BMW 实现了两个接口
 	test.Hello() // BMW-00001 is saying hello!
 
+	var c interface{} // interface 类型默认是指针
+	fmt.Println(c)
 }

@@ -6,6 +6,7 @@ type Student struct {
 	Name string
 }
 
+// 类型断言：接口属于一般类型，通过类型断言判断实现了某个接口变量的具体类型
 func Test(a interface{}) {
 	b, ok := a.(int)
 	if ok == false {
@@ -16,6 +17,7 @@ func Test(a interface{}) {
 	fmt.Println(b)
 }
 
+// 分类
 func classifier(items ...interface{}) {
 	for i, v := range items {
 		// fmt.Println(v.(type)) // 不能这样用

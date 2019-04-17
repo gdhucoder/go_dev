@@ -10,6 +10,7 @@ type Writer interface {
 	Write()
 }
 
+// 接口嵌套，一个接口可以包含其他接口
 type ReaderWriter interface {
 	Reader
 	Writer
