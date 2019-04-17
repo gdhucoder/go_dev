@@ -82,3 +82,7 @@ https://en.wikipedia.org/wiki/Closure_(computer_programming)
 ## 关于interface
 
 空接口没有任何方法，所有类型都实现了空接口
+
+## 关于reflect
+
+运行时反射，可以使程序操作任意类型的对象。静态类型为TypeOf，动态数据为ValueOf
