@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_dev/day6/work/model"
+	"time"
 )
 
 var (
@@ -77,4 +78,11 @@ func main() {
 		return
 	}
 	fmt.Println("user login success")
+
+	for i := 0; i < 50; i++ {
+		time.Sleep(time.Second)
+		fmt.Printf("day %d\n", i)
+		model.RollDate(students)
+	}
+
 }

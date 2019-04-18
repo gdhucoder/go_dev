@@ -13,6 +13,8 @@ var (
 	ErrReturnNumWrong = errors.New("Return Num is Wrong!")
 )
 
+const DateFormat = "2006-01-02"
+
 // 书籍录入功能，书籍信息包括书名、副本数、作者、出版日期
 type Book struct {
 	Name          string
