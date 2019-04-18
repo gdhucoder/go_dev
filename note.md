@@ -86,3 +86,9 @@ https://en.wikipedia.org/wiki/Closure_(computer_programming)
 ## 关于reflect
 
 运行时反射，可以使程序操作任意类型的对象。静态类型为TypeOf，动态数据为ValueOf
+
+## 关于负载均衡
+
+[负载均衡](https://en.wikipedia.org/wiki/Load_balancing_(computing))
+
+[RoundRobin DNS](https://en.wikipedia.org/wiki/Round-robin_DNS)

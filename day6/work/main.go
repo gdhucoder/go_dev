@@ -82,6 +82,8 @@ func main() {
 	for i := 0; i < 50; i++ {
 		time.Sleep(time.Second)
 		fmt.Printf("day %d\n", i)
+
+		// 日期滚动
 		model.RollDate(students)
 	}
 
