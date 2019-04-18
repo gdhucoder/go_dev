@@ -1,9 +1,9 @@
 package model
 
-import "errors"
+import "fmt"
 
 var (
-	ErrBookNotFound = errors.New("book not found!")
+// ErrBookNotFound = errors.New("book not found!")
 )
 
 // 学生信息管理功能，管理每个学生的姓名、年级、身份证、性别、
@@ -34,6 +34,22 @@ func (s *Student) AddBook(book *BorrowItem) {
 	s.books = append(s.books, book)
 }
 
+// 学生借书
+func (s *Student) BorrowBook(book *Book, num int) (err error) {
+	err = book.Borrow(s, num)
+	if err != nil {
+		return
+	}
+
+	borrowItem := &BorrowItem{
+		book: book,
+		num:  num,
+	}
+
+	s.books = append(s.books, borrowItem)
+	return
+}
+
 func (s *Student) DelBook(b *BorrowItem) (err error) {
 	for i := 0; i < len(s.books); i++ {
 		if s.books[i].book.Name == b.book.Name {
@@ -54,4 +70,10 @@ func (s *Student) DelBook(b *BorrowItem) (err error) {
 
 func (s *Student) ListBook() []*BorrowItem {
 	return s.books
+}
+
+func (s *Student) PrintBorrowedBooks() {
+	for i, v := range s.books {
+		fmt.Printf("%d %v %d\n", i, *(v.book), v.num)
+	}
 }
