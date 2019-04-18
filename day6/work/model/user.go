@@ -35,6 +35,7 @@ func Login(user []*User, uesrname, password string) (err error) {
 
 		if u.UserName == uesrname && u.Password == password {
 			u.Status = ONLINE
+			return
 		}
 		if u.UserName == uesrname && u.Password != password {
 			err = ErrUserNameOrPasswordWrong

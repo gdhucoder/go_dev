@@ -3,6 +3,7 @@ package model
 import (
 	"errors"
 	"fmt"
+	"sort"
 )
 
 var (
@@ -25,6 +26,19 @@ type Book struct {
 }
 
 type ByBorrowedTimes []*Book // 按照被借的次数排序
+
+// 实现排序接口
+func (b ByBorrowedTimes) Len() int {
+	return len(b)
+}
+
+func (b ByBorrowedTimes) Less(i, j int) bool {
+	return b[i].BorrowedTimes < b[j].BorrowedTimes
+}
+
+func (b ByBorrowedTimes) Swap(i, j int) {
+	b[i], b[j] = b[j], b[i]
+}
 
 // 书籍录入功能
 // 返回一个书的指针
@@ -52,6 +66,7 @@ func (b *Book) Borrow(s *Student, c int) (err error) {
 	b.InStock -= c // 库存还剩几本
 	b.Out += c     // 在外几本
 	b.Borrowed = append(b.Borrowed, s)
+	b.BorrowedTimes++
 	return
 }
 
@@ -98,9 +113,22 @@ func (b *Book) BorrowedByStudents() []*Student {
 }
 
 // 增加显示热门图书的功能，被借次数最多的top10
-func Top10Books(books []*Book) {
+func Top10Books(books []*Book) (res []*Book) {
 	// 将书籍按照被借的次数倒序排列
-
+	var btimes ByBorrowedTimes
+	btimes = books
+	sort.Sort(sort.Reverse(btimes))
+	for i, b := range btimes {
+		fmt.Println(i, b.Name, b.BorrowedTimes)
+	}
+	numBooks := len(btimes)
+	if numBooks > 10 {
+		res = btimes[0:10]
+	} else {
+		res = btimes[0:numBooks]
+	}
+	// fmt.Println(btimes)
+	return
 }
 
 //

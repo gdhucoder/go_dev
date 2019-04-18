@@ -8,11 +8,12 @@ import (
 var (
 	books    []*model.Book
 	students []*model.Student
+	users    []*model.User
 )
 
 func init() {
 	books = InitBooks()
-	students = InitStudent()
+	users, students = InitUsers()
 }
 
 func InitStudent() (students []*model.Student) {
@@ -22,15 +23,32 @@ func InitStudent() (students []*model.Student) {
 	return
 }
 
+func InitUsers() (users []*model.User, students []*model.Student) {
+	students = make([]*model.Student, 2)
+	users = make([]*model.User, 2)
+	users[0] = model.Register("hgd", "123", "hgd", 2, "220221198909260203", 1)
+	users[1] = model.Register("wtw", "123", "wtw", 1, "220221198909260202", 0)
+	students[0] = users[0].StudentInfo
+	students[1] = users[1].StudentInfo
+	return
+}
+
+// 初始化书库
 func InitBooks() (books []*model.Book) {
 	books = make([]*model.Book, 2)
 	books[0] = model.CreateBook("人类简史", 3, "赫拉利", "2019-04-18")
 	books[1] = model.CreateBook("硅谷之谜", 10, "吴军", "2019-02-13")
-	return
-}
-
-// 初始化用户
-func InitUsers() {
+	books = append(books, model.CreateBook("硅谷之谜1", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜2", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜3", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜4", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜5", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜6", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜7", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜8", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜9", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜10", 10, "吴军", "2019-02-13"))
+	books = append(books, model.CreateBook("硅谷之谜11", 10, "吴军", "2019-02-13"))
 	return
 }
 
@@ -51,4 +69,12 @@ func main() {
 	students[1].PrintBorrowedBooks()
 	fdBook[0].BorrowedByStudents()
 
+	model.Top10Books(books)
+
+	err = model.Login(users, "hgd", "123")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println("user login success")
 }
