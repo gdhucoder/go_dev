@@ -2,6 +2,10 @@ package balance
 
 import "errors"
 
+func init() {
+	RegisterBalancer("roundrobin", NewRoundRobin())
+}
+
 type RoundRobin struct {
 	curInstIdx int
 }

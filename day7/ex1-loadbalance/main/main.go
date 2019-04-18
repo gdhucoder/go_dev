@@ -22,10 +22,11 @@ func main() {
 
 	// var roundRobin *balance.RoundRobin
 	// roundRobin = balance.NewRoundRobin()
-	balancer := balance.NewRoundRobin() // 负载均衡
+	// balancer := balance.NewRoundRobin() // 负载均衡
+
 	for i := 0; i < 20; i++ {
 
-		inst, err := balancer.DoBalance(insts)
+		inst, err := balance.DoBalance("xx", insts)
 
 		if err != nil {
 			fmt.Println("balance error: ", err)
@@ -35,5 +36,9 @@ func main() {
 		fmt.Println(inst)
 		time.Sleep(time.Second)
 	}
+
+	// 192.168.33.15:5000
+	// 192.168.199.187:5000
+	// ...
 
 }
