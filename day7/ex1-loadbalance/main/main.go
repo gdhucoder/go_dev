@@ -26,7 +26,7 @@ func main() {
 
 	for i := 0; i < 20; i++ {
 
-		inst, err := balance.DoBalance("xx", insts)
+		inst, err := balance.DoBalance("hash", insts)
 
 		if err != nil {
 			fmt.Println("balance error: ", err)
