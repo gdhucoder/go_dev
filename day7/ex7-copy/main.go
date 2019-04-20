@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// 复制文件
 func main() {
 	inputFile := "D:\\project\\src\\go_dev\\day7\\ex4-filebufio\\test.txt"
 	dstFile := "D:\\project\\src\\go_dev\\day7\\ex7-copy\\test_copy.txt"
