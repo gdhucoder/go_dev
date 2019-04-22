@@ -21,13 +21,14 @@ func calc(t *Task) {
 	for i := 1; i <= t.N; i++ {
 		sum *= uint64(i)
 	}
+	fmt.Println(t.N, sum)
 	lock.Lock()
 	m[t.N] = sum
 	lock.Unlock()
 }
 
 func main() {
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 50; i++ {
 		t := &Task{N: i}
 		go calc(t)
 	}
