@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestAdd(t *testing.T) {
-	r := add(2, 4)
+	r := add(3, 4)
 	if r != 6 {
 		t.Fatalf("expecting %d, but %d\n", 6, r)
 	}

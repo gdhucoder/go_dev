@@ -92,3 +92,45 @@ https://en.wikipedia.org/wiki/Closure_(computer_programming)
 [负载均衡](https://en.wikipedia.org/wiki/Load_balancing_(computing))
 
 [RoundRobin DNS](https://en.wikipedia.org/wiki/Round-robin_DNS)
+
+
+## go 写测试案例
+
+go文件以 xxx_test.go结尾
+
+新建方法
+
+cd 到测试代码所在的目录 直接执行go test
+
+如果想看执行输出的日志 go test -v
+
+```go
+func TestAdd(t *testing.T) {
+	r := add(2, 4)
+	if r != 6 {
+		t.Fatalf("expecting %d, but %d\n", 6, r)
+	}
+	t.Logf("test succ")
+
+	// PS D:\project> cd .\src\go_dev\day8
+	// PS D:\project\src\go_dev\day8> cd .\ex9-test\
+	// PS D:\project\src\go_dev\day8\ex9-test> go test -v
+	// === RUN   TestAdd
+	// --- PASS: TestAdd (0.00s)
+	// 		calc_test.go:10: test succ
+	// PASS
+	// ok      go_dev/day8/ex9-test    0.506s
+	// PS D:\project\src\go_dev\day8\ex9-test>
+}
+```
+
+失败
+```
+PS D:\project\src\go_dev\day8\ex9-test> go test -v
+=== RUN   TestAdd
+--- FAIL: TestAdd (0.00s)
+    calc_test.go:8: expecting 6, but 7
+FAIL
+exit status 1
+FAIL    go_dev/day8/ex9-test    0.513s
+```
