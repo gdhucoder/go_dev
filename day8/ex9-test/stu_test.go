@@ -24,4 +24,7 @@ func TestLoad(t *testing.T) {
 		t.Fatalf("test failed %v", err)
 	}
 	fmt.Println(stu)
+	// --- FAIL: TestLoad (0.00s)
+	// d:\project\src\go_dev\day8\ex9-test\stu_test.go:24: test failed open
+	// ./stu11.dat: The system cannot find the file specified.
 }
