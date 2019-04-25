@@ -134,3 +134,42 @@ FAIL
 exit status 1
 FAIL    go_dev/day8/ex9-test    0.513s
 ```
+
+### 进程、线程、协程
+
+进程是程序在操作系统中的一次执行过程，系统进行资源分配和调度的一个独立单元。
+
+线程是进程的一个执行实体，是CPU调度和分派的基本单位，它是比进程更小的独立运行的基本单位。
+
+一个进程可以创建和撤销多个线程，同一个进程中的多个线程之间可以并发执行。
+
+协程：独立的栈空间，共享堆空间，调度由用户自己控制，本质上有点类似于用户级线程，这些用户线程的调度也是自己实现的。
+
+线程：一个线程上可以运行多个协程，协程是轻量级的线程。
+
+### 并发和并行
+
+![2019-04-25-001](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-001.jpg)
+
+### 获取CPU数目
+
+```go
+num := runtime.NumCPU()
+runtime.GOMAXPROCS(num)
+```
+
+### 不同goroute如何进行通讯
+
+1. 全局变量+锁同步
+
+全局变量是共享的。
+
+2. 使用channal 管道
+
+![2019-04-25-004](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-004.jpg)
+
+![2019-04-25-005](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-005.jpg)
+
+![2019-04-25-006](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-006.jpg)
+
+![2019-04-25-007](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-007.jpg)
