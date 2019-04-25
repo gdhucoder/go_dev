@@ -135,7 +135,7 @@ exit status 1
 FAIL    go_dev/day8/ex9-test    0.513s
 ```
 
-### 进程、线程、协程
+## 进程、线程、协程
 
 进程是程序在操作系统中的一次执行过程，系统进行资源分配和调度的一个独立单元。
 
@@ -147,18 +147,18 @@ FAIL    go_dev/day8/ex9-test    0.513s
 
 线程：一个线程上可以运行多个协程，协程是轻量级的线程。
 
-### 并发和并行
+## 并发和并行
 
 ![2019-04-25-001](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-001.jpg)
 
-### 获取CPU数目
+## 获取CPU数目
 
 ```go
 num := runtime.NumCPU()
 runtime.GOMAXPROCS(num)
 ```
 
-### 不同goroute如何进行通讯
+## 不同goroute如何进行通讯
 
 1. 全局变量+锁同步
 
