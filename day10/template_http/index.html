@@ -3,7 +3,11 @@
     <title>{{.Title}}</title>
   </head>
   <body>
-    <h1>Hello, {{.Name}}</h1>
+    {{if gt .Age 18}}
+    <h1>Hello, old man, {{.Name}}</h1>
+    {{else}}
+    <h1>Hello, young man, {{.Name}}</h1>
+    {{end}}
     {{.}}
   </body>
 </html>
