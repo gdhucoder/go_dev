@@ -173,3 +173,13 @@ runtime.GOMAXPROCS(num)
 ![2019-04-25-006](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-006.jpg)
 
 ![2019-04-25-007](https://gitee.com/gdhu/prvpic/raw/master/2019-04-25-007.jpg)
+
+## Go 连接MySQL
+
+驱动
+
+[go-sql-driver](https://github.com/go-sql-driver/mysql)
+
+扩展
+
+[go-sql-extension](https://github.com/jmoiron/sqlx)
