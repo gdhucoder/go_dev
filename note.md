@@ -183,3 +183,7 @@ runtime.GOMAXPROCS(num)
 扩展
 
 [go-sql-extension](https://github.com/jmoiron/sqlx)
+
+
+## 日志收集
+
