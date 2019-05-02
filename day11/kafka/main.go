@@ -12,15 +12,15 @@ func main() {
 	config.Producer.Partitioner = sarama.NewRandomPartitioner
 	config.Producer.Return.Successes = true
 
-	client, err := sarama.NewSyncProducer([]string{"192.168.31.224:9092"}, config)
+	client, err := sarama.NewSyncProducer([]string{"127.0.0.1:9092"}, config)
 	if err != nil {
 		fmt.Println("producer close, err:", err)
 		return
 	}
 
 	msg := &sarama.ProducerMessage{}
-	msg.Topic = "nginx_log"
-	msg.Value = sarama.StringEncoder("胡国栋")
+	msg.Topic = "test"
+	msg.Value = sarama.StringEncoder("this is a message.")
 
 	defer client.Close()
 
