@@ -1,0 +1,6 @@
+2019/05/02 22:39:25.952 [W]  this is a warn, my name is stu03
+2019/05/02 22:40:33.824 [W]  this is a warn, my name is stu03
+2019/05/02 22:41:38.942 [W]  this is a warn, my name is stu03
+2019/05/02 22:41:57.560 [D]  this is a test, my name is stu01
+2019/05/02 22:41:57.560 [D]  this is a trace, my name is stu02
+2019/05/02 22:41:57.560 [W]  this is a warn, my name is stu03

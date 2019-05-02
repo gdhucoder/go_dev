@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/Shopify/sarama"
 )
@@ -18,17 +19,20 @@ func main() {
 		return
 	}
 
-	msg := &sarama.ProducerMessage{}
-	msg.Topic = "test"
-	msg.Value = sarama.StringEncoder("this is a message.")
-
 	defer client.Close()
 
-	pid, offset, err := client.SendMessage(msg)
-	if err != nil {
-		fmt.Println("send message failed,", err)
-		return
+	for {
+		msg := &sarama.ProducerMessage{}
+		msg.Topic = "test"
+		msg.Value = sarama.StringEncoder("this is a message.")
+
+		pid, offset, err := client.SendMessage(msg)
+		if err != nil {
+			fmt.Println("send message failed,", err)
+			return
+		}
+		fmt.Printf("pid:%v offset:%v\n", pid, offset)
+		time.Sleep(time.Second)
 	}
 
-	fmt.Printf("pid:%v offset:%v\n", pid, offset)
 }
