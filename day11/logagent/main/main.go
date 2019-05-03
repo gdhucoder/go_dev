@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_dev/day11/logagent/conf"
+	"go_dev/day11/logagent/kafka"
 	"go_dev/day11/logagent/tailf"
 
 	"github.com/astaxie/beego/logs"
@@ -30,7 +31,21 @@ func main() {
 		fmt.Printf("init tailf failed, err: %v\n", err)
 		return
 	}
-	logs.Debug("init tailf success!")
+
+	err = kafka.InitKafka(conf.AppConfig.KafkaAddr)
+	if err != nil {
+		fmt.Printf("init kafka failed, err: %v\n", err)
+		return
+	}
+
+	// go func() {
+	// 	var count int
+	// 	for {
+	// 		count++
+	// 		logs.Debug("test msg ", count)
+	// 		time.Sleep(time.Second)
+	// 	}
+	// }()
 
 	// &{debug D:\project\src\go_dev\day11\logagent\logs\logagent.log [{D:\project\src\go_dev\day11\logagent\logs\collect nginx_log}]}
 

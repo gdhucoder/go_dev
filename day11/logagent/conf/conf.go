@@ -9,6 +9,7 @@ import (
 type Config struct {
 	LogLevel  string
 	LogPath   string
+	KafkaAddr string
 	Collector []Collector
 }
 
@@ -37,6 +38,8 @@ func InitConf(configType, configPath string) (err error) {
 	AppConfig.LogPath = logPath
 	logLevel := conf.String("server::log_level")
 	AppConfig.LogLevel = logLevel
+	kafkaAddr := conf.String("kafka::kafka_addr")
+	AppConfig.KafkaAddr = kafkaAddr
 	loadCollector(conf)
 	return
 }

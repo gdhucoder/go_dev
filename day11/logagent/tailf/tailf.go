@@ -30,6 +30,11 @@ var (
 	tailObjMgr *TailObjMgr
 )
 
+func GetOneLine() (msg *TextMsg) {
+	msg = <-tailObjMgr.msgChan
+	return
+}
+
 func InitTailF(collectors []conf.Collector) (err error) {
 
 	if len(collectors) == 0 {
