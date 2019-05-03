@@ -10,15 +10,17 @@ import (
 )
 
 type TailObj struct {
-	tail        *tail.Tail
-	collectConf conf.Collector
+	tail        *tail.Tail     // each tail reads  a log file
+	collectConf conf.Collector // config in ini file
 }
 
+// message send to kafka, inclues msg, and topic
 type TextMsg struct {
 	Msg   string
 	Topic string
 }
 
+// we have several log files, each log file has a *tail*
 type TailObjMgr struct {
 	tailObjs []*TailObj
 	msgChan  chan *TextMsg
