@@ -18,7 +18,7 @@ func main() {
 		return
 	}
 
-	logs.SetLogger(logs.AdapterFile, string(configStr))
+	logs.SetLogger(logs.AdapterFile, string(configStr)) // 转成json字符串
 
 	logs.Debug("this is a test, my name is %s", "stu01")
 	logs.Trace("this is a trace, my name is %s", "stu02")
@@ -32,4 +32,6 @@ func main() {
 	// 2019/05/02 22:41:57.560 [W]  this is a warn, my name is stu03
 
 	// 可以当做错误日志。定一个错误的topic，每分钟检查一下，若出现错误发送邮件。
+
+	// 热加载配置文件，实时检查文件的变更，程序不需要重启。
 }
