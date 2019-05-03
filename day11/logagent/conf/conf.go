@@ -9,12 +9,13 @@ import (
 type Config struct {
 	LogLevel  string
 	LogPath   string
-	collector []Collector
+	Collector []Collector
 }
 
 type Collector struct {
-	LogPath string
-	Topic   string
+	LogPath  string
+	Topic    string
+	ChanSize int
 }
 
 var (
@@ -42,8 +43,13 @@ func InitConf(configType, configPath string) (err error) {
 
 func loadCollector(conf config.Configer) (err error) {
 	collcetor := Collector{}
+	chanSize, err := conf.Int("collect::chan_size")
+	if err != nil {
+		chanSize = 100
+	}
+	collcetor.ChanSize = chanSize
 	collcetor.LogPath = conf.String("collect::log_path")
 	collcetor.Topic = conf.String("collect::topic")
-	AppConfig.collector = append(AppConfig.collector, collcetor)
+	AppConfig.Collector = append(AppConfig.Collector, collcetor)
 	return
 }
