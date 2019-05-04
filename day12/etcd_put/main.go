@@ -22,6 +22,7 @@ func main() {
 	fmt.Println("connect succ")
 	defer cli.Close()
 
+	// per second modify /logagent/conf/ value
 	var count int
 	for {
 		count++
