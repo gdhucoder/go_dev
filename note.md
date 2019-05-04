@@ -209,3 +209,9 @@ msg: &{这是一个测试
 msg: &{在此测试
  2019-05-02 21:34:51.6270595 +0800 CST m=+42.534983401 <nil>}
 ```
+
+## etcd put value
+
+PS D:\project> go build D:\project\src\go_dev\day12\etcd_put\
+PS D:\project> D:\project\etcd_put.exe
+
