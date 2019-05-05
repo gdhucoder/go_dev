@@ -10,6 +10,7 @@ type Config struct {
 	LogLevel  string
 	LogPath   string
 	KafkaAddr string
+	EtcdAddr  string
 	Collector []Collector
 }
 
@@ -34,6 +35,7 @@ func InitConf(configType, configPath string) (err error) {
 	if len(logPath) == 0 {
 		panic("log path is not defined!")
 	}
+
 	AppConfig = &Config{}
 	AppConfig.LogPath = logPath
 	logLevel := conf.String("server::log_level")
@@ -41,6 +43,14 @@ func InitConf(configType, configPath string) (err error) {
 	kafkaAddr := conf.String("kafka::kafka_addr")
 	AppConfig.KafkaAddr = kafkaAddr
 	loadCollector(conf)
+
+	// etcd config
+	etcdAddr := conf.String("etcd::addr")
+	if len(etcdAddr) == 0 {
+		panic("etcdAddr is not defined!")
+	}
+	AppConfig.EtcdAddr = etcdAddr
+
 	return
 }
 
