@@ -35,6 +35,7 @@ func SetLogConfigToEtcd() {
 
 	var longConfArr []conf.Collector
 
+	// we can collect different levles of log (logpath, and topic)
 	longConfArr = append(
 		longConfArr,
 		conf.Collector{
@@ -42,6 +43,15 @@ func SetLogConfigToEtcd() {
 			Topic:   "test",
 		},
 	)
+
+	// longConfArr = append(
+	// 	longConfArr,
+	// 	conf.Collector{
+	// 		LogPath: "D:/project/src/go_dev/day11/logagent/logs/logagent_error.log",
+	// 		Topic:   "test_error",
+	// 	},
+	// )
+
 	data, err := json.Marshal(longConfArr)
 	if err != nil {
 		panic("init config failed")

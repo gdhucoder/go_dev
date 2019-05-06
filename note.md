@@ -239,3 +239,23 @@ PS D:\project> D:\project\etcd_put.exe
 - master选举
 
 https://github.com/etcd-io/etcd/releases/
+
+
+
+#### 将配置写入ETCD中
+
+将收集日志的IP和路径写入ECTD中，logagent部署到客户端机器上后，可以注册配置，收集对应目录的日志，并发送给kafka
+
+在ETCD中集中管理配置，客户端自动去收集
+
+例如：
+
+ectd中
+key = 项目/ip value = [{logpath, topic}, ...]
+...
+
+```
+different clients :
+\backend\logagent\192.168.104.1  [{logpath, topic}, ...]
+\backend\logagent\192.168.104.165  [{logpath, topic}, ...]
+```

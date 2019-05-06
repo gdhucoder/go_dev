@@ -1,79 +1,778 @@
-2019/05/06 16:17:46.803 [D]  init logger success!
-2019/05/06 16:17:46.826 [D]  ectdKey: /logagent/config/169.254.34.53
-2019/05/06 16:17:47.157 [D]  resp from etcd:[]
-2019/05/06 16:17:47.157 [D]  ectdKey: /logagent/config/169.254.252.17
-2019/05/06 16:17:47.157 [D]  resp from etcd:[]
-2019/05/06 16:17:47.157 [D]  ectdKey: /logagent/config/172.17.183.1
-2019/05/06 16:17:47.158 [D]  resp from etcd:[]
-2019/05/06 16:17:47.158 [D]  ectdKey: /logagent/config/169.254.122.129
-2019/05/06 16:17:47.159 [D]  resp from etcd:[]
-2019/05/06 16:17:47.159 [D]  ectdKey: /logagent/config/172.26.66.1
-2019/05/06 16:17:47.159 [D]  resp from etcd:[]
-2019/05/06 16:17:47.159 [D]  ectdKey: /logagent/config/192.168.31.224
-2019/05/06 16:17:47.161 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:28 version:3 value:"[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]" ]
-2019/05/06 16:17:47.161 [D]  log config is [{D:/project/src/go_dev/day11/logagent/logs/logagent.log test 0}]
-2019/05/06 16:17:47.161 [D]  init etcd success!
-2019/05/06 16:17:47.161 [D]  init tailf success!
-2019/05/06 16:17:47.166 [D]  init Kafka succ!
-2019/05/06 16:17:47.166 [D]  init kafka success!
-2019/05/06 16:17:47.166 [D]  init all success!
-2019/05/06 16:17:50.851 [D]  pid:0 offset:34040 topic:test
-2019/05/06 16:17:50.912 [D]  pid:0 offset:34041 topic:test
-2019/05/06 16:17:50.915 [D]  pid:0 offset:34042 topic:test
-2019/05/06 16:17:51.080 [D]  pid:0 offset:34043 topic:test
-2019/05/06 16:17:51.081 [D]  pid:0 offset:34044 topic:test
-2019/05/06 16:17:51.083 [D]  pid:0 offset:34045 topic:test
-2019/05/06 16:17:51.340 [D]  pid:0 offset:34046 topic:test
-2019/05/06 16:17:51.346 [D]  pid:0 offset:34047 topic:test
-2019/05/06 16:17:51.351 [D]  pid:0 offset:34048 topic:test
-2019/05/06 16:17:51.582 [D]  pid:0 offset:34049 topic:test
-2019/05/06 16:17:51.583 [D]  pid:0 offset:34050 topic:test
-2019/05/06 16:17:51.585 [D]  pid:0 offset:34051 topic:test
-2019/05/06 16:17:51.833 [D]  pid:0 offset:34052 topic:test
-2019/05/06 16:17:51.835 [D]  pid:0 offset:34053 topic:test
-2019/05/06 16:17:51.838 [D]  pid:0 offset:34054 topic:test
-2019/05/06 16:17:52.083 [D]  pid:0 offset:34055 topic:test
-2019/05/06 16:17:52.085 [D]  pid:0 offset:34056 topic:test
-2019/05/06 16:17:52.087 [D]  pid:0 offset:34057 topic:test
-2019/05/06 16:17:52.341 [D]  pid:0 offset:34058 topic:test
-2019/05/06 16:17:52.350 [D]  pid:0 offset:34059 topic:test
-2019/05/06 16:17:52.363 [D]  pid:0 offset:34060 topic:test
-2019/05/06 16:17:52.589 [D]  pid:0 offset:34061 topic:test
-2019/05/06 16:17:52.592 [D]  pid:0 offset:34062 topic:test
-2019/05/06 16:17:52.594 [D]  pid:0 offset:34063 topic:test
-2019/05/06 16:17:52.835 [D]  pid:0 offset:34064 topic:test
-2019/05/06 16:17:52.837 [D]  pid:0 offset:34065 topic:test
-2019/05/06 16:17:52.839 [D]  pid:0 offset:34066 topic:test
-2019/05/06 16:17:53.086 [D]  pid:0 offset:34067 topic:test
-2019/05/06 16:17:53.089 [D]  pid:0 offset:34068 topic:test
-2019/05/06 16:17:53.100 [D]  pid:0 offset:34069 topic:test
-2019/05/06 16:17:53.339 [D]  pid:0 offset:34070 topic:test
-2019/05/06 16:17:53.343 [D]  pid:0 offset:34071 topic:test
-2019/05/06 16:17:53.345 [D]  pid:0 offset:34072 topic:test
-2019/05/06 16:17:53.588 [D]  pid:0 offset:34073 topic:test
-2019/05/06 16:17:53.590 [D]  pid:0 offset:34074 topic:test
-2019/05/06 16:17:53.600 [D]  pid:0 offset:34075 topic:test
-2019/05/06 16:17:53.838 [D]  pid:0 offset:34076 topic:test
-2019/05/06 16:17:53.840 [D]  pid:0 offset:34077 topic:test
-2019/05/06 16:17:53.842 [D]  pid:0 offset:34078 topic:test
-2019/05/06 16:17:54.089 [D]  pid:0 offset:34079 topic:test
-2019/05/06 16:17:54.093 [D]  pid:0 offset:34080 topic:test
-2019/05/06 16:17:54.095 [D]  pid:0 offset:34081 topic:test
-2019/05/06 16:17:54.352 [D]  pid:0 offset:34082 topic:test
-2019/05/06 16:17:54.359 [D]  pid:0 offset:34083 topic:test
-2019/05/06 16:17:54.362 [D]  pid:0 offset:34084 topic:test
-2019/05/06 16:17:54.597 [D]  pid:0 offset:34085 topic:test
-2019/05/06 16:17:54.599 [D]  pid:0 offset:34086 topic:test
-2019/05/06 16:17:54.606 [D]  pid:0 offset:34087 topic:test
-2019/05/06 16:17:54.856 [D]  pid:0 offset:34088 topic:test
-2019/05/06 16:17:54.861 [D]  pid:0 offset:34089 topic:test
-2019/05/06 16:17:54.870 [D]  pid:0 offset:34090 topic:test
-2019/05/06 16:17:55.124 [D]  pid:0 offset:34091 topic:test
-2019/05/06 16:17:55.127 [D]  pid:0 offset:34092 topic:test
-2019/05/06 16:17:55.130 [D]  pid:0 offset:34093 topic:test
-2019/05/06 16:17:55.367 [D]  pid:0 offset:34094 topic:test
-2019/05/06 16:17:55.369 [D]  pid:0 offset:34095 topic:test
-2019/05/06 16:17:55.370 [D]  pid:0 offset:34096 topic:test
-2019/05/06 16:17:55.630 [D]  pid:0 offset:34097 topic:test
-2019/05/06 16:17:55.634 [D]  pid:0 offset:34098 topic:test
-2019/05/06 16:17:55.637 [D]  pid:0 offset:34099 topic:test
+2019/05/06 16:28:24.365 [D]  init logger success!
+2019/05/06 16:28:24.371 [D]  ectdKey: /logagent/config/169.254.34.53
+2019/05/06 16:28:24.711 [D]  resp from etcd:[]
+2019/05/06 16:28:24.711 [D]  ectdKey: /logagent/config/169.254.252.17
+2019/05/06 16:28:24.712 [D]  resp from etcd:[]
+2019/05/06 16:28:24.713 [D]  ectdKey: /logagent/config/172.17.183.1
+2019/05/06 16:28:24.714 [D]  resp from etcd:[]
+2019/05/06 16:28:24.714 [D]  ectdKey: /logagent/config/169.254.122.129
+2019/05/06 16:28:24.716 [D]  resp from etcd:[]
+2019/05/06 16:28:24.716 [D]  ectdKey: /logagent/config/172.26.66.1
+2019/05/06 16:28:24.717 [D]  resp from etcd:[]
+2019/05/06 16:28:24.718 [D]  ectdKey: /logagent/config/192.168.31.224
+2019/05/06 16:28:24.719 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:28 version:3 value:"[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]" ]
+2019/05/06 16:28:24.719 [D]  log config is [{D:/project/src/go_dev/day11/logagent/logs/logagent.log test 0}]
+2019/05/06 16:28:24.720 [D]  init etcd success!
+2019/05/06 16:28:24.720 [D]  init tailf success!
+2019/05/06 16:28:24.727 [D]  init Kafka succ!
+2019/05/06 16:28:24.727 [D]  init kafka success!
+2019/05/06 16:28:24.727 [D]  init all success!
+2019/05/06 16:28:28.086 [D]  send succ: pid:0 offset:34100 topic:test
+2019/05/06 16:28:28.089 [D]  send succ: pid:0 offset:34101 topic:test
+2019/05/06 16:28:28.091 [D]  send succ: pid:0 offset:34102 topic:test
+2019/05/06 16:28:28.321 [D]  send succ: pid:0 offset:34103 topic:test
+2019/05/06 16:28:28.324 [D]  send succ: pid:0 offset:34104 topic:test
+2019/05/06 16:28:28.326 [D]  send succ: pid:0 offset:34105 topic:test
+2019/05/06 16:28:28.571 [D]  send succ: pid:0 offset:34106 topic:test
+2019/05/06 16:28:28.575 [D]  send succ: pid:0 offset:34107 topic:test
+2019/05/06 16:28:28.577 [D]  send succ: pid:0 offset:34108 topic:test
+2019/05/06 16:28:28.823 [D]  send succ: pid:0 offset:34109 topic:test
+2019/05/06 16:28:28.825 [D]  send succ: pid:0 offset:34110 topic:test
+2019/05/06 16:28:28.827 [D]  send succ: pid:0 offset:34111 topic:test
+2019/05/06 16:28:29.084 [D]  send succ: pid:0 offset:34112 topic:test
+2019/05/06 16:28:29.089 [D]  send succ: pid:0 offset:34113 topic:test
+2019/05/06 16:28:29.097 [D]  send succ: pid:0 offset:34114 topic:test
+2019/05/06 16:28:29.325 [D]  send succ: pid:0 offset:34115 topic:test
+2019/05/06 16:28:29.327 [D]  send succ: pid:0 offset:34116 topic:test
+2019/05/06 16:28:29.329 [D]  send succ: pid:0 offset:34117 topic:test
+2019/05/06 16:28:29.589 [D]  send succ: pid:0 offset:34118 topic:test
+2019/05/06 16:28:29.593 [D]  send succ: pid:0 offset:34119 topic:test
+2019/05/06 16:28:29.595 [D]  send succ: pid:0 offset:34120 topic:test
+2019/05/06 16:28:29.848 [D]  send succ: pid:0 offset:34121 topic:test
+2019/05/06 16:28:29.857 [D]  send succ: pid:0 offset:34122 topic:test
+2019/05/06 16:28:29.860 [D]  send succ: pid:0 offset:34123 topic:test
+2019/05/06 16:28:30.093 [D]  send succ: pid:0 offset:34124 topic:test
+2019/05/06 16:28:30.094 [D]  send succ: pid:0 offset:34125 topic:test
+2019/05/06 16:28:30.096 [D]  send succ: pid:0 offset:34126 topic:test
+2019/05/06 16:28:30.344 [D]  send succ: pid:0 offset:34127 topic:test
+2019/05/06 16:28:30.345 [D]  send succ: pid:0 offset:34128 topic:test
+2019/05/06 16:28:30.347 [D]  send succ: pid:0 offset:34129 topic:test
+2019/05/06 16:28:30.595 [D]  send succ: pid:0 offset:34130 topic:test
+2019/05/06 16:28:30.603 [D]  send succ: pid:0 offset:34131 topic:test
+2019/05/06 16:28:30.606 [D]  send succ: pid:0 offset:34132 topic:test
+2019/05/06 16:28:30.845 [D]  send succ: pid:0 offset:34133 topic:test
+2019/05/06 16:28:30.847 [D]  send succ: pid:0 offset:34134 topic:test
+2019/05/06 16:28:30.848 [D]  send succ: pid:0 offset:34135 topic:test
+2019/05/06 16:28:31.096 [D]  send succ: pid:0 offset:34136 topic:test
+2019/05/06 16:28:31.098 [D]  send succ: pid:0 offset:34137 topic:test
+2019/05/06 16:28:31.099 [D]  send succ: pid:0 offset:34138 topic:test
+2019/05/06 16:28:31.351 [D]  send succ: pid:0 offset:34139 topic:test
+2019/05/06 16:28:31.353 [D]  send succ: pid:0 offset:34140 topic:test
+2019/05/06 16:28:31.355 [D]  send succ: pid:0 offset:34141 topic:test
+2019/05/06 16:28:31.597 [D]  send succ: pid:0 offset:34142 topic:test
+2019/05/06 16:28:31.599 [D]  send succ: pid:0 offset:34143 topic:test
+2019/05/06 16:28:31.600 [D]  send succ: pid:0 offset:34144 topic:test
+2019/05/06 16:28:31.849 [D]  send succ: pid:0 offset:34145 topic:test
+2019/05/06 16:28:31.850 [D]  send succ: pid:0 offset:34146 topic:test
+2019/05/06 16:28:31.852 [D]  send succ: pid:0 offset:34147 topic:test
+2019/05/06 16:28:32.098 [D]  send succ: pid:0 offset:34148 topic:test
+2019/05/06 16:28:32.100 [D]  send succ: pid:0 offset:34149 topic:test
+2019/05/06 16:28:32.101 [D]  send succ: pid:0 offset:34150 topic:test
+2019/05/06 16:28:32.352 [D]  send succ: pid:0 offset:34151 topic:test
+2019/05/06 16:28:32.354 [D]  send succ: pid:0 offset:34152 topic:test
+2019/05/06 16:28:32.356 [D]  send succ: pid:0 offset:34153 topic:test
+2019/05/06 16:28:32.601 [D]  send succ: pid:0 offset:34154 topic:test
+2019/05/06 16:28:32.602 [D]  send succ: pid:0 offset:34155 topic:test
+2019/05/06 16:28:32.604 [D]  send succ: pid:0 offset:34156 topic:test
+2019/05/06 16:28:32.852 [D]  send succ: pid:0 offset:34157 topic:test
+2019/05/06 16:28:32.854 [D]  send succ: pid:0 offset:34158 topic:test
+2019/05/06 16:28:32.856 [D]  send succ: pid:0 offset:34159 topic:test
+2019/05/06 16:28:33.103 [D]  send succ: pid:0 offset:34160 topic:test
+2019/05/06 16:28:33.107 [D]  send succ: pid:0 offset:34161 topic:test
+2019/05/06 16:28:33.109 [D]  send succ: pid:0 offset:34162 topic:test
+2019/05/06 16:28:33.354 [D]  send succ: pid:0 offset:34163 topic:test
+2019/05/06 16:28:33.356 [D]  send succ: pid:0 offset:34164 topic:test
+2019/05/06 16:28:33.358 [D]  send succ: pid:0 offset:34165 topic:test
+2019/05/06 16:28:33.605 [D]  send succ: pid:0 offset:34166 topic:test
+2019/05/06 16:28:33.606 [D]  send succ: pid:0 offset:34167 topic:test
+2019/05/06 16:28:33.608 [D]  send succ: pid:0 offset:34168 topic:test
+2019/05/06 16:28:33.856 [D]  send succ: pid:0 offset:34169 topic:test
+2019/05/06 16:28:33.861 [D]  send succ: pid:0 offset:34170 topic:test
+2019/05/06 16:28:33.862 [D]  send succ: pid:0 offset:34171 topic:test
+2019/05/06 16:28:34.110 [D]  send succ: pid:0 offset:34172 topic:test
+2019/05/06 16:28:34.111 [D]  send succ: pid:0 offset:34173 topic:test
+2019/05/06 16:28:34.112 [D]  send succ: pid:0 offset:34174 topic:test
+2019/05/06 16:28:34.358 [D]  send succ: pid:0 offset:34175 topic:test
+2019/05/06 16:28:34.360 [D]  send succ: pid:0 offset:34176 topic:test
+2019/05/06 16:28:34.361 [D]  send succ: pid:0 offset:34177 topic:test
+2019/05/06 16:28:34.611 [D]  send succ: pid:0 offset:34178 topic:test
+2019/05/06 16:28:34.612 [D]  send succ: pid:0 offset:34179 topic:test
+2019/05/06 16:28:34.614 [D]  send succ: pid:0 offset:34180 topic:test
+2019/05/06 16:28:34.860 [D]  send succ: pid:0 offset:34181 topic:test
+2019/05/06 16:28:34.863 [D]  send succ: pid:0 offset:34182 topic:test
+2019/05/06 16:28:34.864 [D]  send succ: pid:0 offset:34183 topic:test
+2019/05/06 16:28:35.111 [D]  send succ: pid:0 offset:34184 topic:test
+2019/05/06 16:28:35.113 [D]  send succ: pid:0 offset:34185 topic:test
+2019/05/06 16:28:35.114 [D]  send succ: pid:0 offset:34186 topic:test
+2019/05/06 16:28:35.363 [D]  send succ: pid:0 offset:34187 topic:test
+2019/05/06 16:28:35.365 [D]  send succ: pid:0 offset:34188 topic:test
+2019/05/06 16:28:35.366 [D]  send succ: pid:0 offset:34189 topic:test
+2019/05/06 16:28:35.615 [D]  send succ: pid:0 offset:34190 topic:test
+2019/05/06 16:28:35.617 [D]  send succ: pid:0 offset:34191 topic:test
+2019/05/06 16:28:35.618 [D]  send succ: pid:0 offset:34192 topic:test
+2019/05/06 16:28:35.866 [D]  send succ: pid:0 offset:34193 topic:test
+2019/05/06 16:28:35.868 [D]  send succ: pid:0 offset:34194 topic:test
+2019/05/06 16:28:35.870 [D]  send succ: pid:0 offset:34195 topic:test
+2019/05/06 16:28:36.116 [D]  send succ: pid:0 offset:34196 topic:test
+2019/05/06 16:28:36.118 [D]  send succ: pid:0 offset:34197 topic:test
+2019/05/06 16:28:36.119 [D]  send succ: pid:0 offset:34198 topic:test
+2019/05/06 16:28:36.368 [D]  send succ: pid:0 offset:34199 topic:test
+2019/05/06 16:28:36.370 [D]  send succ: pid:0 offset:34200 topic:test
+2019/05/06 16:28:36.371 [D]  send succ: pid:0 offset:34201 topic:test
+2019/05/06 16:28:36.621 [D]  send succ: pid:0 offset:34202 topic:test
+2019/05/06 16:28:36.625 [D]  send succ: pid:0 offset:34203 topic:test
+2019/05/06 16:28:36.627 [D]  send succ: pid:0 offset:34204 topic:test
+2019/05/06 16:28:36.874 [D]  send succ: pid:0 offset:34205 topic:test
+2019/05/06 16:28:36.877 [D]  send succ: pid:0 offset:34206 topic:test
+2019/05/06 16:28:36.880 [D]  send succ: pid:0 offset:34207 topic:test
+2019/05/06 16:28:37.123 [D]  send succ: pid:0 offset:34208 topic:test
+2019/05/06 16:28:37.125 [D]  send succ: pid:0 offset:34209 topic:test
+2019/05/06 16:28:37.128 [D]  send succ: pid:0 offset:34210 topic:test
+2019/05/06 16:28:37.376 [D]  send succ: pid:0 offset:34211 topic:test
+2019/05/06 16:28:37.378 [D]  send succ: pid:0 offset:34212 topic:test
+2019/05/06 16:28:37.381 [D]  send succ: pid:0 offset:34213 topic:test
+2019/05/06 16:28:37.625 [D]  send succ: pid:0 offset:34214 topic:test
+2019/05/06 16:28:37.627 [D]  send succ: pid:0 offset:34215 topic:test
+2019/05/06 16:28:37.628 [D]  send succ: pid:0 offset:34216 topic:test
+2019/05/06 16:28:37.876 [D]  send succ: pid:0 offset:34217 topic:test
+2019/05/06 16:28:37.877 [D]  send succ: pid:0 offset:34218 topic:test
+2019/05/06 16:28:37.878 [D]  send succ: pid:0 offset:34219 topic:test
+2019/05/06 16:28:38.126 [D]  send succ: pid:0 offset:34220 topic:test
+2019/05/06 16:28:38.128 [D]  send succ: pid:0 offset:34221 topic:test
+2019/05/06 16:28:38.129 [D]  send succ: pid:0 offset:34222 topic:test
+2019/05/06 16:28:38.382 [D]  send succ: pid:0 offset:34223 topic:test
+2019/05/06 16:28:38.384 [D]  send succ: pid:0 offset:34224 topic:test
+2019/05/06 16:28:38.386 [D]  send succ: pid:0 offset:34225 topic:test
+2019/05/06 16:28:38.630 [D]  send succ: pid:0 offset:34226 topic:test
+2019/05/06 16:28:38.634 [D]  send succ: pid:0 offset:34227 topic:test
+2019/05/06 16:28:38.635 [D]  send succ: pid:0 offset:34228 topic:test
+2019/05/06 16:28:38.881 [D]  send succ: pid:0 offset:34229 topic:test
+2019/05/06 16:28:38.883 [D]  send succ: pid:0 offset:34230 topic:test
+2019/05/06 16:28:38.888 [D]  send succ: pid:0 offset:34231 topic:test
+2019/05/06 16:28:39.143 [D]  send succ: pid:0 offset:34232 topic:test
+2019/05/06 16:28:39.145 [D]  send succ: pid:0 offset:34233 topic:test
+2019/05/06 16:28:39.147 [D]  send succ: pid:0 offset:34234 topic:test
+2019/05/06 16:28:39.384 [D]  send succ: pid:0 offset:34235 topic:test
+2019/05/06 16:28:39.386 [D]  send succ: pid:0 offset:34236 topic:test
+2019/05/06 16:28:39.387 [D]  send succ: pid:0 offset:34237 topic:test
+2019/05/06 16:28:39.634 [D]  send succ: pid:0 offset:34238 topic:test
+2019/05/06 16:28:39.636 [D]  send succ: pid:0 offset:34239 topic:test
+2019/05/06 16:28:39.640 [D]  send succ: pid:0 offset:34240 topic:test
+2019/05/06 16:28:39.891 [D]  send succ: pid:0 offset:34241 topic:test
+2019/05/06 16:28:39.894 [D]  send succ: pid:0 offset:34242 topic:test
+2019/05/06 16:28:39.896 [D]  send succ: pid:0 offset:34243 topic:test
+2019/05/06 16:28:40.139 [D]  send succ: pid:0 offset:34244 topic:test
+2019/05/06 16:28:40.142 [D]  send succ: pid:0 offset:34245 topic:test
+2019/05/06 16:28:40.144 [D]  send succ: pid:0 offset:34246 topic:test
+2019/05/06 16:28:40.390 [D]  send succ: pid:0 offset:34247 topic:test
+2019/05/06 16:28:40.391 [D]  send succ: pid:0 offset:34248 topic:test
+2019/05/06 16:28:40.393 [D]  send succ: pid:0 offset:34249 topic:test
+2019/05/06 16:28:40.641 [D]  send succ: pid:0 offset:34250 topic:test
+2019/05/06 16:28:40.644 [D]  send succ: pid:0 offset:34251 topic:test
+2019/05/06 16:28:40.646 [D]  send succ: pid:0 offset:34252 topic:test
+2019/05/06 16:28:40.892 [D]  send succ: pid:0 offset:34253 topic:test
+2019/05/06 16:28:40.894 [D]  send succ: pid:0 offset:34254 topic:test
+2019/05/06 16:28:40.895 [D]  send succ: pid:0 offset:34255 topic:test
+2019/05/06 16:28:41.142 [D]  send succ: pid:0 offset:34256 topic:test
+2019/05/06 16:28:41.144 [D]  send succ: pid:0 offset:34257 topic:test
+2019/05/06 16:28:41.146 [D]  send succ: pid:0 offset:34258 topic:test
+2019/05/06 16:28:41.394 [D]  send succ: pid:0 offset:34259 topic:test
+2019/05/06 16:28:41.396 [D]  send succ: pid:0 offset:34260 topic:test
+2019/05/06 16:28:41.397 [D]  send succ: pid:0 offset:34261 topic:test
+2019/05/06 16:28:41.645 [D]  send succ: pid:0 offset:34262 topic:test
+2019/05/06 16:28:41.646 [D]  send succ: pid:0 offset:34263 topic:test
+2019/05/06 16:28:41.648 [D]  send succ: pid:0 offset:34264 topic:test
+2019/05/06 16:28:41.894 [D]  send succ: pid:0 offset:34265 topic:test
+2019/05/06 16:28:41.895 [D]  send succ: pid:0 offset:34266 topic:test
+2019/05/06 16:28:41.897 [D]  send succ: pid:0 offset:34267 topic:test
+2019/05/06 16:28:42.147 [D]  send succ: pid:0 offset:34268 topic:test
+2019/05/06 16:28:42.150 [D]  send succ: pid:0 offset:34269 topic:test
+2019/05/06 16:28:42.153 [D]  send succ: pid:0 offset:34270 topic:test
+2019/05/06 16:28:42.399 [D]  send succ: pid:0 offset:34271 topic:test
+2019/05/06 16:28:42.400 [D]  send succ: pid:0 offset:34272 topic:test
+2019/05/06 16:28:42.402 [D]  send succ: pid:0 offset:34273 topic:test
+2019/05/06 16:28:42.647 [D]  send succ: pid:0 offset:34274 topic:test
+2019/05/06 16:28:42.652 [D]  send succ: pid:0 offset:34275 topic:test
+2019/05/06 16:28:42.656 [D]  send succ: pid:0 offset:34276 topic:test
+2019/05/06 16:28:42.898 [D]  send succ: pid:0 offset:34277 topic:test
+2019/05/06 16:28:42.899 [D]  send succ: pid:0 offset:34278 topic:test
+2019/05/06 16:28:42.902 [D]  send succ: pid:0 offset:34279 topic:test
+2019/05/06 16:28:43.148 [D]  send succ: pid:0 offset:34280 topic:test
+2019/05/06 16:28:43.150 [D]  send succ: pid:0 offset:34281 topic:test
+2019/05/06 16:28:43.152 [D]  send succ: pid:0 offset:34282 topic:test
+2019/05/06 16:28:43.398 [D]  send succ: pid:0 offset:34283 topic:test
+2019/05/06 16:28:43.400 [D]  send succ: pid:0 offset:34284 topic:test
+2019/05/06 16:28:43.402 [D]  send succ: pid:0 offset:34285 topic:test
+2019/05/06 16:28:43.649 [D]  send succ: pid:0 offset:34286 topic:test
+2019/05/06 16:28:43.650 [D]  send succ: pid:0 offset:34287 topic:test
+2019/05/06 16:28:43.652 [D]  send succ: pid:0 offset:34288 topic:test
+2019/05/06 16:28:43.901 [D]  send succ: pid:0 offset:34289 topic:test
+2019/05/06 16:28:43.903 [D]  send succ: pid:0 offset:34290 topic:test
+2019/05/06 16:28:43.905 [D]  send succ: pid:0 offset:34291 topic:test
+2019/05/06 16:28:44.150 [D]  send succ: pid:0 offset:34292 topic:test
+2019/05/06 16:28:44.151 [D]  send succ: pid:0 offset:34293 topic:test
+2019/05/06 16:28:44.153 [D]  send succ: pid:0 offset:34294 topic:test
+2019/05/06 16:28:44.413 [D]  send succ: pid:0 offset:34295 topic:test
+2019/05/06 16:28:44.415 [D]  send succ: pid:0 offset:34296 topic:test
+2019/05/06 16:28:44.416 [D]  send succ: pid:0 offset:34297 topic:test
+2019/05/06 16:28:44.653 [D]  send succ: pid:0 offset:34298 topic:test
+2019/05/06 16:28:44.654 [D]  send succ: pid:0 offset:34299 topic:test
+2019/05/06 16:28:44.658 [D]  send succ: pid:0 offset:34300 topic:test
+2019/05/06 16:28:44.903 [D]  send succ: pid:0 offset:34301 topic:test
+2019/05/06 16:28:44.905 [D]  send succ: pid:0 offset:34302 topic:test
+2019/05/06 16:28:44.907 [D]  send succ: pid:0 offset:34303 topic:test
+2019/05/06 16:28:45.154 [D]  send succ: pid:0 offset:34304 topic:test
+2019/05/06 16:28:45.156 [D]  send succ: pid:0 offset:34305 topic:test
+2019/05/06 16:28:45.158 [D]  send succ: pid:0 offset:34306 topic:test
+2019/05/06 16:28:45.406 [D]  send succ: pid:0 offset:34307 topic:test
+2019/05/06 16:28:45.407 [D]  send succ: pid:0 offset:34308 topic:test
+2019/05/06 16:28:45.409 [D]  send succ: pid:0 offset:34309 topic:test
+2019/05/06 16:28:45.663 [D]  send succ: pid:0 offset:34310 topic:test
+2019/05/06 16:28:45.664 [D]  send succ: pid:0 offset:34311 topic:test
+2019/05/06 16:28:45.666 [D]  send succ: pid:0 offset:34312 topic:test
+2019/05/06 16:28:45.911 [D]  send succ: pid:0 offset:34313 topic:test
+2019/05/06 16:28:45.914 [D]  send succ: pid:0 offset:34314 topic:test
+2019/05/06 16:28:45.916 [D]  send succ: pid:0 offset:34315 topic:test
+2019/05/06 16:28:46.162 [D]  send succ: pid:0 offset:34316 topic:test
+2019/05/06 16:28:46.168 [D]  send succ: pid:0 offset:34317 topic:test
+2019/05/06 16:28:46.171 [D]  send succ: pid:0 offset:34318 topic:test
+2019/05/06 16:28:46.411 [D]  send succ: pid:0 offset:34319 topic:test
+2019/05/06 16:28:46.414 [D]  send succ: pid:0 offset:34320 topic:test
+2019/05/06 16:28:46.416 [D]  send succ: pid:0 offset:34321 topic:test
+2019/05/06 16:28:46.663 [D]  send succ: pid:0 offset:34322 topic:test
+2019/05/06 16:28:46.666 [D]  send succ: pid:0 offset:34323 topic:test
+2019/05/06 16:28:46.668 [D]  send succ: pid:0 offset:34324 topic:test
+2019/05/06 16:28:46.928 [D]  send succ: pid:0 offset:34325 topic:test
+2019/05/06 16:28:46.935 [D]  send succ: pid:0 offset:34326 topic:test
+2019/05/06 16:28:46.937 [D]  send succ: pid:0 offset:34327 topic:test
+2019/05/06 16:28:47.174 [D]  send succ: pid:0 offset:34328 topic:test
+2019/05/06 16:28:47.177 [D]  send succ: pid:0 offset:34329 topic:test
+2019/05/06 16:28:47.201 [D]  send succ: pid:0 offset:34330 topic:test
+2019/05/06 16:28:47.422 [D]  send succ: pid:0 offset:34331 topic:test
+2019/05/06 16:28:47.425 [D]  send succ: pid:0 offset:34332 topic:test
+2019/05/06 16:28:47.427 [D]  send succ: pid:0 offset:34333 topic:test
+2019/05/06 16:28:47.670 [D]  send succ: pid:0 offset:34334 topic:test
+2019/05/06 16:28:47.672 [D]  send succ: pid:0 offset:34335 topic:test
+2019/05/06 16:28:47.673 [D]  send succ: pid:0 offset:34336 topic:test
+2019/05/06 16:28:47.921 [D]  send succ: pid:0 offset:34337 topic:test
+2019/05/06 16:28:47.923 [D]  send succ: pid:0 offset:34338 topic:test
+2019/05/06 16:28:47.924 [D]  send succ: pid:0 offset:34339 topic:test
+2019/05/06 16:28:48.173 [D]  send succ: pid:0 offset:34340 topic:test
+2019/05/06 16:28:48.175 [D]  send succ: pid:0 offset:34341 topic:test
+2019/05/06 16:28:48.177 [D]  send succ: pid:0 offset:34342 topic:test
+2019/05/06 16:28:48.423 [D]  send succ: pid:0 offset:34343 topic:test
+2019/05/06 16:28:48.425 [D]  send succ: pid:0 offset:34344 topic:test
+2019/05/06 16:28:48.427 [D]  send succ: pid:0 offset:34345 topic:test
+2019/05/06 16:28:48.678 [D]  send succ: pid:0 offset:34346 topic:test
+2019/05/06 16:28:48.687 [D]  send succ: pid:0 offset:34347 topic:test
+2019/05/06 16:28:48.689 [D]  send succ: pid:0 offset:34348 topic:test
+2019/05/06 16:28:48.927 [D]  send succ: pid:0 offset:34349 topic:test
+2019/05/06 16:28:48.928 [D]  send succ: pid:0 offset:34350 topic:test
+2019/05/06 16:28:48.929 [D]  send succ: pid:0 offset:34351 topic:test
+2019/05/06 16:28:49.181 [D]  send succ: pid:0 offset:34352 topic:test
+2019/05/06 16:28:49.185 [D]  send succ: pid:0 offset:34353 topic:test
+2019/05/06 16:28:49.188 [D]  send succ: pid:0 offset:34354 topic:test
+2019/05/06 16:28:49.431 [D]  send succ: pid:0 offset:34355 topic:test
+2019/05/06 16:28:49.433 [D]  send succ: pid:0 offset:34356 topic:test
+2019/05/06 16:28:49.436 [D]  send succ: pid:0 offset:34357 topic:test
+2019/05/06 16:28:49.680 [D]  send succ: pid:0 offset:34358 topic:test
+2019/05/06 16:28:49.685 [D]  send succ: pid:0 offset:34359 topic:test
+2019/05/06 16:28:49.688 [D]  send succ: pid:0 offset:34360 topic:test
+2019/05/06 16:28:49.935 [D]  send succ: pid:0 offset:34361 topic:test
+2019/05/06 16:28:49.937 [D]  send succ: pid:0 offset:34362 topic:test
+2019/05/06 16:28:49.939 [D]  send succ: pid:0 offset:34363 topic:test
+2019/05/06 16:28:50.198 [D]  send succ: pid:0 offset:34364 topic:test
+2019/05/06 16:28:50.206 [D]  send succ: pid:0 offset:34365 topic:test
+2019/05/06 16:28:50.208 [D]  send succ: pid:0 offset:34366 topic:test
+2019/05/06 16:28:50.439 [D]  send succ: pid:0 offset:34367 topic:test
+2019/05/06 16:28:50.441 [D]  send succ: pid:0 offset:34368 topic:test
+2019/05/06 16:28:50.445 [D]  send succ: pid:0 offset:34369 topic:test
+2019/05/06 16:28:50.694 [D]  send succ: pid:0 offset:34370 topic:test
+2019/05/06 16:28:50.695 [D]  send succ: pid:0 offset:34371 topic:test
+2019/05/06 16:28:50.697 [D]  send succ: pid:0 offset:34372 topic:test
+2019/05/06 16:28:50.943 [D]  send succ: pid:0 offset:34373 topic:test
+2019/05/06 16:28:50.947 [D]  send succ: pid:0 offset:34374 topic:test
+2019/05/06 16:28:50.950 [D]  send succ: pid:0 offset:34375 topic:test
+2019/05/06 16:28:51.199 [D]  send succ: pid:0 offset:34376 topic:test
+2019/05/06 16:28:51.202 [D]  send succ: pid:0 offset:34377 topic:test
+2019/05/06 16:28:51.205 [D]  send succ: pid:0 offset:34378 topic:test
+2019/05/06 16:28:51.447 [D]  send succ: pid:0 offset:34379 topic:test
+2019/05/06 16:28:51.450 [D]  send succ: pid:0 offset:34380 topic:test
+2019/05/06 16:28:51.453 [D]  send succ: pid:0 offset:34381 topic:test
+2019/05/06 16:28:51.696 [D]  send succ: pid:0 offset:34382 topic:test
+2019/05/06 16:28:51.699 [D]  send succ: pid:0 offset:34383 topic:test
+2019/05/06 16:28:51.706 [D]  send succ: pid:0 offset:34384 topic:test
+2019/05/06 16:28:51.947 [D]  send succ: pid:0 offset:34385 topic:test
+2019/05/06 16:28:51.951 [D]  send succ: pid:0 offset:34386 topic:test
+2019/05/06 16:28:51.954 [D]  send succ: pid:0 offset:34387 topic:test
+2019/05/06 16:28:52.215 [D]  send succ: pid:0 offset:34388 topic:test
+2019/05/06 16:28:52.220 [D]  send succ: pid:0 offset:34389 topic:test
+2019/05/06 16:28:52.225 [D]  send succ: pid:0 offset:34390 topic:test
+2019/05/06 16:28:52.450 [D]  send succ: pid:0 offset:34391 topic:test
+2019/05/06 16:28:52.452 [D]  send succ: pid:0 offset:34392 topic:test
+2019/05/06 16:28:52.455 [D]  send succ: pid:0 offset:34393 topic:test
+2019/05/06 16:28:52.699 [D]  send succ: pid:0 offset:34394 topic:test
+2019/05/06 16:28:52.700 [D]  send succ: pid:0 offset:34395 topic:test
+2019/05/06 16:28:52.701 [D]  send succ: pid:0 offset:34396 topic:test
+2019/05/06 16:28:52.961 [D]  send succ: pid:0 offset:34397 topic:test
+2019/05/06 16:28:52.965 [D]  send succ: pid:0 offset:34398 topic:test
+2019/05/06 16:28:52.969 [D]  send succ: pid:0 offset:34399 topic:test
+2019/05/06 16:28:53.207 [D]  send succ: pid:0 offset:34400 topic:test
+2019/05/06 16:28:53.208 [D]  send succ: pid:0 offset:34401 topic:test
+2019/05/06 16:28:53.210 [D]  send succ: pid:0 offset:34402 topic:test
+2019/05/06 16:28:53.457 [D]  send succ: pid:0 offset:34403 topic:test
+2019/05/06 16:28:53.458 [D]  send succ: pid:0 offset:34404 topic:test
+2019/05/06 16:28:53.460 [D]  send succ: pid:0 offset:34405 topic:test
+2019/05/06 16:28:53.713 [D]  send succ: pid:0 offset:34406 topic:test
+2019/05/06 16:28:53.722 [D]  send succ: pid:0 offset:34407 topic:test
+2019/05/06 16:28:53.727 [D]  send succ: pid:0 offset:34408 topic:test
+2019/05/06 16:28:53.960 [D]  send succ: pid:0 offset:34409 topic:test
+2019/05/06 16:28:53.961 [D]  send succ: pid:0 offset:34410 topic:test
+2019/05/06 16:28:53.966 [D]  send succ: pid:0 offset:34411 topic:test
+2019/05/06 16:28:54.210 [D]  send succ: pid:0 offset:34412 topic:test
+2019/05/06 16:28:54.214 [D]  send succ: pid:0 offset:34413 topic:test
+2019/05/06 16:28:54.215 [D]  send succ: pid:0 offset:34414 topic:test
+2019/05/06 16:28:54.485 [D]  send succ: pid:0 offset:34415 topic:test
+2019/05/06 16:28:54.489 [D]  send succ: pid:0 offset:34416 topic:test
+2019/05/06 16:28:54.491 [D]  send succ: pid:0 offset:34417 topic:test
+2019/05/06 16:28:54.733 [D]  send succ: pid:0 offset:34418 topic:test
+2019/05/06 16:28:54.735 [D]  send succ: pid:0 offset:34419 topic:test
+2019/05/06 16:28:54.738 [D]  send succ: pid:0 offset:34420 topic:test
+2019/05/06 16:28:54.983 [D]  send succ: pid:0 offset:34421 topic:test
+2019/05/06 16:28:54.984 [D]  send succ: pid:0 offset:34422 topic:test
+2019/05/06 16:28:54.985 [D]  send succ: pid:0 offset:34423 topic:test
+2019/05/06 16:28:55.234 [D]  send succ: pid:0 offset:34424 topic:test
+2019/05/06 16:28:55.236 [D]  send succ: pid:0 offset:34425 topic:test
+2019/05/06 16:28:55.238 [D]  send succ: pid:0 offset:34426 topic:test
+2019/05/06 16:28:55.486 [D]  send succ: pid:0 offset:34427 topic:test
+2019/05/06 16:28:55.488 [D]  send succ: pid:0 offset:34428 topic:test
+2019/05/06 16:28:55.490 [D]  send succ: pid:0 offset:34429 topic:test
+2019/05/06 16:28:55.744 [D]  send succ: pid:0 offset:34430 topic:test
+2019/05/06 16:28:55.747 [D]  send succ: pid:0 offset:34431 topic:test
+2019/05/06 16:28:55.750 [D]  send succ: pid:0 offset:34432 topic:test
+2019/05/06 16:28:55.999 [D]  send succ: pid:0 offset:34433 topic:test
+2019/05/06 16:28:56.001 [D]  send succ: pid:0 offset:34434 topic:test
+2019/05/06 16:28:56.003 [D]  send succ: pid:0 offset:34435 topic:test
+2019/05/06 16:28:56.250 [D]  send succ: pid:0 offset:34436 topic:test
+2019/05/06 16:28:56.251 [D]  send succ: pid:0 offset:34437 topic:test
+2019/05/06 16:28:56.253 [D]  send succ: pid:0 offset:34438 topic:test
+2019/05/06 16:28:56.499 [D]  send succ: pid:0 offset:34439 topic:test
+2019/05/06 16:28:56.501 [D]  send succ: pid:0 offset:34440 topic:test
+2019/05/06 16:28:56.502 [D]  send succ: pid:0 offset:34441 topic:test
+2019/05/06 16:28:56.752 [D]  send succ: pid:0 offset:34442 topic:test
+2019/05/06 16:28:56.754 [D]  send succ: pid:0 offset:34443 topic:test
+2019/05/06 16:28:56.757 [D]  send succ: pid:0 offset:34444 topic:test
+2019/05/06 16:28:57.004 [D]  send succ: pid:0 offset:34445 topic:test
+2019/05/06 16:28:57.006 [D]  send succ: pid:0 offset:34446 topic:test
+2019/05/06 16:28:57.008 [D]  send succ: pid:0 offset:34447 topic:test
+2019/05/06 16:28:57.253 [D]  send succ: pid:0 offset:34448 topic:test
+2019/05/06 16:28:57.255 [D]  send succ: pid:0 offset:34449 topic:test
+2019/05/06 16:28:57.258 [D]  send succ: pid:0 offset:34450 topic:test
+2019/05/06 16:28:57.505 [D]  send succ: pid:0 offset:34451 topic:test
+2019/05/06 16:28:57.506 [D]  send succ: pid:0 offset:34452 topic:test
+2019/05/06 16:28:57.508 [D]  send succ: pid:0 offset:34453 topic:test
+2019/05/06 16:28:57.756 [D]  send succ: pid:0 offset:34454 topic:test
+2019/05/06 16:28:57.757 [D]  send succ: pid:0 offset:34455 topic:test
+2019/05/06 16:28:57.758 [D]  send succ: pid:0 offset:34456 topic:test
+2019/05/06 16:28:58.010 [D]  send succ: pid:0 offset:34457 topic:test
+2019/05/06 16:28:58.012 [D]  send succ: pid:0 offset:34458 topic:test
+2019/05/06 16:28:58.014 [D]  send succ: pid:0 offset:34459 topic:test
+2019/05/06 16:28:58.262 [D]  send succ: pid:0 offset:34460 topic:test
+2019/05/06 16:28:58.264 [D]  send succ: pid:0 offset:34461 topic:test
+2019/05/06 16:28:58.265 [D]  send succ: pid:0 offset:34462 topic:test
+2019/05/06 16:28:58.513 [D]  send succ: pid:0 offset:34463 topic:test
+2019/05/06 16:28:58.520 [D]  send succ: pid:0 offset:34464 topic:test
+2019/05/06 16:28:58.521 [D]  send succ: pid:0 offset:34465 topic:test
+2019/05/06 16:28:58.762 [D]  send succ: pid:0 offset:34466 topic:test
+2019/05/06 16:28:58.765 [D]  send succ: pid:0 offset:34467 topic:test
+2019/05/06 16:28:58.768 [D]  send succ: pid:0 offset:34468 topic:test
+2019/05/06 16:28:59.017 [D]  send succ: pid:0 offset:34469 topic:test
+2019/05/06 16:28:59.019 [D]  send succ: pid:0 offset:34470 topic:test
+2019/05/06 16:28:59.026 [D]  send succ: pid:0 offset:34471 topic:test
+2019/05/06 16:28:59.267 [D]  send succ: pid:0 offset:34472 topic:test
+2019/05/06 16:28:59.269 [D]  send succ: pid:0 offset:34473 topic:test
+2019/05/06 16:28:59.271 [D]  send succ: pid:0 offset:34474 topic:test
+2019/05/06 16:28:59.519 [D]  send succ: pid:0 offset:34475 topic:test
+2019/05/06 16:28:59.522 [D]  send succ: pid:0 offset:34476 topic:test
+2019/05/06 16:28:59.524 [D]  send succ: pid:0 offset:34477 topic:test
+2019/05/06 16:28:59.774 [D]  send succ: pid:0 offset:34478 topic:test
+2019/05/06 16:28:59.785 [D]  send succ: pid:0 offset:34479 topic:test
+2019/05/06 16:28:59.789 [D]  send succ: pid:0 offset:34480 topic:test
+2019/05/06 16:29:00.033 [D]  send succ: pid:0 offset:34481 topic:test
+2019/05/06 16:29:00.035 [D]  send succ: pid:0 offset:34482 topic:test
+2019/05/06 16:29:00.037 [D]  send succ: pid:0 offset:34483 topic:test
+2019/05/06 16:29:00.285 [D]  send succ: pid:0 offset:34484 topic:test
+2019/05/06 16:29:00.287 [D]  send succ: pid:0 offset:34485 topic:test
+2019/05/06 16:29:00.288 [D]  send succ: pid:0 offset:34486 topic:test
+2019/05/06 16:29:00.535 [D]  send succ: pid:0 offset:34487 topic:test
+2019/05/06 16:29:00.537 [D]  send succ: pid:0 offset:34488 topic:test
+2019/05/06 16:29:00.538 [D]  send succ: pid:0 offset:34489 topic:test
+2019/05/06 16:29:00.796 [D]  send succ: pid:0 offset:34490 topic:test
+2019/05/06 16:29:00.798 [D]  send succ: pid:0 offset:34491 topic:test
+2019/05/06 16:29:00.802 [D]  send succ: pid:0 offset:34492 topic:test
+2019/05/06 16:29:01.046 [D]  send succ: pid:0 offset:34493 topic:test
+2019/05/06 16:29:01.049 [D]  send succ: pid:0 offset:34494 topic:test
+2019/05/06 16:29:01.051 [D]  send succ: pid:0 offset:34495 topic:test
+2019/05/06 16:29:01.297 [D]  send succ: pid:0 offset:34496 topic:test
+2019/05/06 16:29:01.298 [D]  send succ: pid:0 offset:34497 topic:test
+2019/05/06 16:29:01.299 [D]  send succ: pid:0 offset:34498 topic:test
+2019/05/06 16:29:01.547 [D]  send succ: pid:0 offset:34499 topic:test
+2019/05/06 16:29:01.548 [D]  send succ: pid:0 offset:34500 topic:test
+2019/05/06 16:29:01.549 [D]  send succ: pid:0 offset:34501 topic:test
+2019/05/06 16:29:01.796 [D]  send succ: pid:0 offset:34502 topic:test
+2019/05/06 16:29:01.798 [D]  send succ: pid:0 offset:34503 topic:test
+2019/05/06 16:29:01.799 [D]  send succ: pid:0 offset:34504 topic:test
+2019/05/06 16:29:02.049 [D]  send succ: pid:0 offset:34505 topic:test
+2019/05/06 16:29:02.050 [D]  send succ: pid:0 offset:34506 topic:test
+2019/05/06 16:29:02.052 [D]  send succ: pid:0 offset:34507 topic:test
+2019/05/06 16:29:02.299 [D]  send succ: pid:0 offset:34508 topic:test
+2019/05/06 16:29:02.301 [D]  send succ: pid:0 offset:34509 topic:test
+2019/05/06 16:29:02.302 [D]  send succ: pid:0 offset:34510 topic:test
+2019/05/06 16:29:02.550 [D]  send succ: pid:0 offset:34511 topic:test
+2019/05/06 16:29:02.551 [D]  send succ: pid:0 offset:34512 topic:test
+2019/05/06 16:29:02.552 [D]  send succ: pid:0 offset:34513 topic:test
+2019/05/06 16:29:02.801 [D]  send succ: pid:0 offset:34514 topic:test
+2019/05/06 16:29:02.803 [D]  send succ: pid:0 offset:34515 topic:test
+2019/05/06 16:29:02.806 [D]  send succ: pid:0 offset:34516 topic:test
+2019/05/06 16:29:03.052 [D]  send succ: pid:0 offset:34517 topic:test
+2019/05/06 16:29:03.053 [D]  send succ: pid:0 offset:34518 topic:test
+2019/05/06 16:29:03.055 [D]  send succ: pid:0 offset:34519 topic:test
+2019/05/06 16:29:03.301 [D]  send succ: pid:0 offset:34520 topic:test
+2019/05/06 16:29:03.302 [D]  send succ: pid:0 offset:34521 topic:test
+2019/05/06 16:29:03.304 [D]  send succ: pid:0 offset:34522 topic:test
+2019/05/06 16:29:03.554 [D]  send succ: pid:0 offset:34523 topic:test
+2019/05/06 16:29:03.558 [D]  send succ: pid:0 offset:34524 topic:test
+2019/05/06 16:29:03.562 [D]  send succ: pid:0 offset:34525 topic:test
+2019/05/06 16:29:03.803 [D]  send succ: pid:0 offset:34526 topic:test
+2019/05/06 16:29:03.804 [D]  send succ: pid:0 offset:34527 topic:test
+2019/05/06 16:29:03.806 [D]  send succ: pid:0 offset:34528 topic:test
+2019/05/06 16:29:04.053 [D]  send succ: pid:0 offset:34529 topic:test
+2019/05/06 16:29:04.054 [D]  send succ: pid:0 offset:34530 topic:test
+2019/05/06 16:29:04.056 [D]  send succ: pid:0 offset:34531 topic:test
+2019/05/06 16:29:04.307 [D]  send succ: pid:0 offset:34532 topic:test
+2019/05/06 16:29:04.308 [D]  send succ: pid:0 offset:34533 topic:test
+2019/05/06 16:29:04.309 [D]  send succ: pid:0 offset:34534 topic:test
+2019/05/06 16:29:04.554 [D]  send succ: pid:0 offset:34535 topic:test
+2019/05/06 16:29:04.556 [D]  send succ: pid:0 offset:34536 topic:test
+2019/05/06 16:29:04.558 [D]  send succ: pid:0 offset:34537 topic:test
+2019/05/06 16:29:04.807 [D]  send succ: pid:0 offset:34538 topic:test
+2019/05/06 16:29:04.808 [D]  send succ: pid:0 offset:34539 topic:test
+2019/05/06 16:29:04.809 [D]  send succ: pid:0 offset:34540 topic:test
+2019/05/06 16:29:05.056 [D]  send succ: pid:0 offset:34541 topic:test
+2019/05/06 16:29:05.058 [D]  send succ: pid:0 offset:34542 topic:test
+2019/05/06 16:29:05.059 [D]  send succ: pid:0 offset:34543 topic:test
+2019/05/06 16:29:05.307 [D]  send succ: pid:0 offset:34544 topic:test
+2019/05/06 16:29:05.308 [D]  send succ: pid:0 offset:34545 topic:test
+2019/05/06 16:29:05.310 [D]  send succ: pid:0 offset:34546 topic:test
+2019/05/06 16:29:05.559 [D]  send succ: pid:0 offset:34547 topic:test
+2019/05/06 16:29:05.561 [D]  send succ: pid:0 offset:34548 topic:test
+2019/05/06 16:29:05.562 [D]  send succ: pid:0 offset:34549 topic:test
+2019/05/06 16:29:05.811 [D]  send succ: pid:0 offset:34550 topic:test
+2019/05/06 16:29:05.813 [D]  send succ: pid:0 offset:34551 topic:test
+2019/05/06 16:29:05.815 [D]  send succ: pid:0 offset:34552 topic:test
+2019/05/06 16:29:06.062 [D]  send succ: pid:0 offset:34553 topic:test
+2019/05/06 16:29:06.063 [D]  send succ: pid:0 offset:34554 topic:test
+2019/05/06 16:29:06.066 [D]  send succ: pid:0 offset:34555 topic:test
+2019/05/06 16:29:06.312 [D]  send succ: pid:0 offset:34556 topic:test
+2019/05/06 16:29:06.313 [D]  send succ: pid:0 offset:34557 topic:test
+2019/05/06 16:29:06.315 [D]  send succ: pid:0 offset:34558 topic:test
+2019/05/06 16:29:06.580 [D]  send succ: pid:0 offset:34559 topic:test
+2019/05/06 16:29:06.608 [D]  send succ: pid:0 offset:34560 topic:test
+2019/05/06 16:29:06.610 [D]  send succ: pid:0 offset:34561 topic:test
+2019/05/06 16:29:06.821 [D]  send succ: pid:0 offset:34562 topic:test
+2019/05/06 16:29:06.823 [D]  send succ: pid:0 offset:34563 topic:test
+2019/05/06 16:29:06.824 [D]  send succ: pid:0 offset:34564 topic:test
+2019/05/06 16:29:07.077 [D]  send succ: pid:0 offset:34565 topic:test
+2019/05/06 16:29:07.079 [D]  send succ: pid:0 offset:34566 topic:test
+2019/05/06 16:29:07.082 [D]  send succ: pid:0 offset:34567 topic:test
+2019/05/06 16:29:07.327 [D]  send succ: pid:0 offset:34568 topic:test
+2019/05/06 16:29:07.328 [D]  send succ: pid:0 offset:34569 topic:test
+2019/05/06 16:29:07.330 [D]  send succ: pid:0 offset:34570 topic:test
+2019/05/06 16:29:07.588 [D]  send succ: pid:0 offset:34571 topic:test
+2019/05/06 16:29:07.601 [D]  send succ: pid:0 offset:34572 topic:test
+2019/05/06 16:29:07.603 [D]  send succ: pid:0 offset:34573 topic:test
+2019/05/06 16:29:07.832 [D]  send succ: pid:0 offset:34574 topic:test
+2019/05/06 16:29:07.834 [D]  send succ: pid:0 offset:34575 topic:test
+2019/05/06 16:29:07.836 [D]  send succ: pid:0 offset:34576 topic:test
+2019/05/06 16:29:08.084 [D]  send succ: pid:0 offset:34577 topic:test
+2019/05/06 16:29:08.086 [D]  send succ: pid:0 offset:34578 topic:test
+2019/05/06 16:29:08.087 [D]  send succ: pid:0 offset:34579 topic:test
+2019/05/06 16:29:08.333 [D]  send succ: pid:0 offset:34580 topic:test
+2019/05/06 16:29:08.334 [D]  send succ: pid:0 offset:34581 topic:test
+2019/05/06 16:29:08.336 [D]  send succ: pid:0 offset:34582 topic:test
+2019/05/06 16:29:08.591 [D]  send succ: pid:0 offset:34583 topic:test
+2019/05/06 16:29:08.593 [D]  send succ: pid:0 offset:34584 topic:test
+2019/05/06 16:29:08.595 [D]  send succ: pid:0 offset:34585 topic:test
+2019/05/06 16:29:08.835 [D]  send succ: pid:0 offset:34586 topic:test
+2019/05/06 16:29:08.837 [D]  send succ: pid:0 offset:34587 topic:test
+2019/05/06 16:29:08.839 [D]  send succ: pid:0 offset:34588 topic:test
+2019/05/06 16:29:09.089 [D]  send succ: pid:0 offset:34589 topic:test
+2019/05/06 16:29:09.090 [D]  send succ: pid:0 offset:34590 topic:test
+2019/05/06 16:29:09.093 [D]  send succ: pid:0 offset:34591 topic:test
+2019/05/06 16:29:09.347 [D]  send succ: pid:0 offset:34592 topic:test
+2019/05/06 16:29:09.352 [D]  send succ: pid:0 offset:34593 topic:test
+2019/05/06 16:29:09.360 [D]  send succ: pid:0 offset:34594 topic:test
+2019/05/06 16:29:09.595 [D]  send succ: pid:0 offset:34595 topic:test
+2019/05/06 16:29:09.597 [D]  send succ: pid:0 offset:34596 topic:test
+2019/05/06 16:29:09.599 [D]  send succ: pid:0 offset:34597 topic:test
+2019/05/06 16:29:09.857 [D]  send succ: pid:0 offset:34598 topic:test
+2019/05/06 16:29:09.860 [D]  send succ: pid:0 offset:34599 topic:test
+2019/05/06 16:29:09.862 [D]  send succ: pid:0 offset:34600 topic:test
+2019/05/06 16:29:10.112 [D]  send succ: pid:0 offset:34601 topic:test
+2019/05/06 16:29:10.121 [D]  send succ: pid:0 offset:34602 topic:test
+2019/05/06 16:29:10.125 [D]  send succ: pid:0 offset:34603 topic:test
+2019/05/06 16:29:10.359 [D]  send succ: pid:0 offset:34604 topic:test
+2019/05/06 16:29:10.361 [D]  send succ: pid:0 offset:34605 topic:test
+2019/05/06 16:29:10.362 [D]  send succ: pid:0 offset:34606 topic:test
+2019/05/06 16:29:10.609 [D]  send succ: pid:0 offset:34607 topic:test
+2019/05/06 16:29:10.610 [D]  send succ: pid:0 offset:34608 topic:test
+2019/05/06 16:29:10.612 [D]  send succ: pid:0 offset:34609 topic:test
+2019/05/06 16:29:10.859 [D]  send succ: pid:0 offset:34610 topic:test
+2019/05/06 16:29:10.860 [D]  send succ: pid:0 offset:34611 topic:test
+2019/05/06 16:29:10.862 [D]  send succ: pid:0 offset:34612 topic:test
+2019/05/06 16:29:11.111 [D]  send succ: pid:0 offset:34613 topic:test
+2019/05/06 16:29:11.112 [D]  send succ: pid:0 offset:34614 topic:test
+2019/05/06 16:29:11.114 [D]  send succ: pid:0 offset:34615 topic:test
+2019/05/06 16:29:11.361 [D]  send succ: pid:0 offset:34616 topic:test
+2019/05/06 16:29:11.363 [D]  send succ: pid:0 offset:34617 topic:test
+2019/05/06 16:29:11.364 [D]  send succ: pid:0 offset:34618 topic:test
+2019/05/06 16:29:11.615 [D]  send succ: pid:0 offset:34619 topic:test
+2019/05/06 16:29:11.616 [D]  send succ: pid:0 offset:34620 topic:test
+2019/05/06 16:29:11.621 [D]  send succ: pid:0 offset:34621 topic:test
+2019/05/06 16:29:11.891 [D]  send succ: pid:0 offset:34622 topic:test
+2019/05/06 16:29:11.900 [D]  send succ: pid:0 offset:34623 topic:test
+2019/05/06 16:29:11.907 [D]  send succ: pid:0 offset:34624 topic:test
+2019/05/06 16:29:12.126 [D]  send succ: pid:0 offset:34625 topic:test
+2019/05/06 16:29:12.128 [D]  send succ: pid:0 offset:34626 topic:test
+2019/05/06 16:29:12.130 [D]  send succ: pid:0 offset:34627 topic:test
+2019/05/06 16:29:12.377 [D]  send succ: pid:0 offset:34628 topic:test
+2019/05/06 16:29:12.378 [D]  send succ: pid:0 offset:34629 topic:test
+2019/05/06 16:29:12.380 [D]  send succ: pid:0 offset:34630 topic:test
+2019/05/06 16:29:12.627 [D]  send succ: pid:0 offset:34631 topic:test
+2019/05/06 16:29:12.629 [D]  send succ: pid:0 offset:34632 topic:test
+2019/05/06 16:29:12.632 [D]  send succ: pid:0 offset:34633 topic:test
+2019/05/06 16:29:12.882 [D]  send succ: pid:0 offset:34634 topic:test
+2019/05/06 16:29:12.891 [D]  send succ: pid:0 offset:34635 topic:test
+2019/05/06 16:29:12.896 [D]  send succ: pid:0 offset:34636 topic:test
+2019/05/06 16:29:13.129 [D]  send succ: pid:0 offset:34637 topic:test
+2019/05/06 16:29:13.130 [D]  send succ: pid:0 offset:34638 topic:test
+2019/05/06 16:29:13.131 [D]  send succ: pid:0 offset:34639 topic:test
+2019/05/06 16:29:13.379 [D]  send succ: pid:0 offset:34640 topic:test
+2019/05/06 16:29:13.381 [D]  send succ: pid:0 offset:34641 topic:test
+2019/05/06 16:29:13.382 [D]  send succ: pid:0 offset:34642 topic:test
+2019/05/06 16:29:13.636 [D]  send succ: pid:0 offset:34643 topic:test
+2019/05/06 16:29:13.638 [D]  send succ: pid:0 offset:34644 topic:test
+2019/05/06 16:29:13.642 [D]  send succ: pid:0 offset:34645 topic:test
+2019/05/06 16:29:13.886 [D]  send succ: pid:0 offset:34646 topic:test
+2019/05/06 16:29:13.888 [D]  send succ: pid:0 offset:34647 topic:test
+2019/05/06 16:29:13.889 [D]  send succ: pid:0 offset:34648 topic:test
+2019/05/06 16:29:14.132 [D]  send succ: pid:0 offset:34649 topic:test
+2019/05/06 16:29:14.135 [D]  send succ: pid:0 offset:34650 topic:test
+2019/05/06 16:29:14.136 [D]  send succ: pid:0 offset:34651 topic:test
+2019/05/06 16:29:14.384 [D]  send succ: pid:0 offset:34652 topic:test
+2019/05/06 16:29:14.386 [D]  send succ: pid:0 offset:34653 topic:test
+2019/05/06 16:29:14.388 [D]  send succ: pid:0 offset:34654 topic:test
+2019/05/06 16:29:14.634 [D]  send succ: pid:0 offset:34655 topic:test
+2019/05/06 16:29:14.635 [D]  send succ: pid:0 offset:34656 topic:test
+2019/05/06 16:29:14.637 [D]  send succ: pid:0 offset:34657 topic:test
+2019/05/06 16:29:14.884 [D]  send succ: pid:0 offset:34658 topic:test
+2019/05/06 16:29:14.885 [D]  send succ: pid:0 offset:34659 topic:test
+2019/05/06 16:29:14.886 [D]  send succ: pid:0 offset:34660 topic:test
+2019/05/06 16:29:15.136 [D]  send succ: pid:0 offset:34661 topic:test
+2019/05/06 16:29:15.137 [D]  send succ: pid:0 offset:34662 topic:test
+2019/05/06 16:29:15.139 [D]  send succ: pid:0 offset:34663 topic:test
+2019/05/06 16:29:15.386 [D]  send succ: pid:0 offset:34664 topic:test
+2019/05/06 16:29:15.388 [D]  send succ: pid:0 offset:34665 topic:test
+2019/05/06 16:29:15.390 [D]  send succ: pid:0 offset:34666 topic:test
+2019/05/06 16:29:15.637 [D]  send succ: pid:0 offset:34667 topic:test
+2019/05/06 16:29:15.639 [D]  send succ: pid:0 offset:34668 topic:test
+2019/05/06 16:29:15.640 [D]  send succ: pid:0 offset:34669 topic:test
+2019/05/06 16:29:15.893 [D]  send succ: pid:0 offset:34670 topic:test
+2019/05/06 16:29:15.895 [D]  send succ: pid:0 offset:34671 topic:test
+2019/05/06 16:29:15.897 [D]  send succ: pid:0 offset:34672 topic:test
+2019/05/06 16:29:16.141 [D]  send succ: pid:0 offset:34673 topic:test
+2019/05/06 16:29:16.142 [D]  send succ: pid:0 offset:34674 topic:test
+2019/05/06 16:29:16.143 [D]  send succ: pid:0 offset:34675 topic:test
+2019/05/06 16:29:16.391 [D]  send succ: pid:0 offset:34676 topic:test
+2019/05/06 16:29:16.392 [D]  send succ: pid:0 offset:34677 topic:test
+2019/05/06 16:29:16.394 [D]  send succ: pid:0 offset:34678 topic:test
+2019/05/06 16:29:16.643 [D]  send succ: pid:0 offset:34679 topic:test
+2019/05/06 16:29:16.646 [D]  send succ: pid:0 offset:34680 topic:test
+2019/05/06 16:29:16.649 [D]  send succ: pid:0 offset:34681 topic:test
+2019/05/06 16:29:16.896 [D]  send succ: pid:0 offset:34682 topic:test
+2019/05/06 16:29:16.900 [D]  send succ: pid:0 offset:34683 topic:test
+2019/05/06 16:29:16.903 [D]  send succ: pid:0 offset:34684 topic:test
+2019/05/06 16:29:17.145 [D]  send succ: pid:0 offset:34685 topic:test
+2019/05/06 16:29:17.148 [D]  send succ: pid:0 offset:34686 topic:test
+2019/05/06 16:29:17.151 [D]  send succ: pid:0 offset:34687 topic:test
+2019/05/06 16:29:17.394 [D]  send succ: pid:0 offset:34688 topic:test
+2019/05/06 16:29:17.395 [D]  send succ: pid:0 offset:34689 topic:test
+2019/05/06 16:29:17.397 [D]  send succ: pid:0 offset:34690 topic:test
+2019/05/06 16:29:17.644 [D]  send succ: pid:0 offset:34691 topic:test
+2019/05/06 16:29:17.645 [D]  send succ: pid:0 offset:34692 topic:test
+2019/05/06 16:29:17.646 [D]  send succ: pid:0 offset:34693 topic:test
+2019/05/06 16:29:17.898 [D]  send succ: pid:0 offset:34694 topic:test
+2019/05/06 16:29:17.902 [D]  send succ: pid:0 offset:34695 topic:test
+2019/05/06 16:29:17.904 [D]  send succ: pid:0 offset:34696 topic:test
+2019/05/06 16:29:18.152 [D]  send succ: pid:0 offset:34697 topic:test
+2019/05/06 16:29:18.154 [D]  send succ: pid:0 offset:34698 topic:test
+2019/05/06 16:29:18.156 [D]  send succ: pid:0 offset:34699 topic:test
+2019/05/06 16:29:18.399 [D]  send succ: pid:0 offset:34700 topic:test
+2019/05/06 16:29:18.401 [D]  send succ: pid:0 offset:34701 topic:test
+2019/05/06 16:29:18.402 [D]  send succ: pid:0 offset:34702 topic:test
+2019/05/06 16:29:18.652 [D]  send succ: pid:0 offset:34703 topic:test
+2019/05/06 16:29:18.656 [D]  send succ: pid:0 offset:34704 topic:test
+2019/05/06 16:29:18.658 [D]  send succ: pid:0 offset:34705 topic:test
+2019/05/06 16:29:18.909 [D]  send succ: pid:0 offset:34706 topic:test
+2019/05/06 16:29:18.915 [D]  send succ: pid:0 offset:34707 topic:test
+2019/05/06 16:29:18.920 [D]  send succ: pid:0 offset:34708 topic:test
+2019/05/06 16:29:19.164 [D]  send succ: pid:0 offset:34709 topic:test
+2019/05/06 16:29:19.170 [D]  send succ: pid:0 offset:34710 topic:test
+2019/05/06 16:29:19.173 [D]  send succ: pid:0 offset:34711 topic:test
+2019/05/06 16:29:19.412 [D]  send succ: pid:0 offset:34712 topic:test
+2019/05/06 16:29:19.414 [D]  send succ: pid:0 offset:34713 topic:test
+2019/05/06 16:29:19.415 [D]  send succ: pid:0 offset:34714 topic:test
+2019/05/06 16:29:19.667 [D]  send succ: pid:0 offset:34715 topic:test
+2019/05/06 16:29:19.671 [D]  send succ: pid:0 offset:34716 topic:test
+2019/05/06 16:29:19.677 [D]  send succ: pid:0 offset:34717 topic:test
+2019/05/06 16:29:19.914 [D]  send succ: pid:0 offset:34718 topic:test
+2019/05/06 16:29:19.916 [D]  send succ: pid:0 offset:34719 topic:test
+2019/05/06 16:29:19.917 [D]  send succ: pid:0 offset:34720 topic:test
+2019/05/06 16:29:20.166 [D]  send succ: pid:0 offset:34721 topic:test
+2019/05/06 16:29:20.168 [D]  send succ: pid:0 offset:34722 topic:test
+2019/05/06 16:29:20.171 [D]  send succ: pid:0 offset:34723 topic:test
+2019/05/06 16:29:20.417 [D]  send succ: pid:0 offset:34724 topic:test
+2019/05/06 16:29:20.419 [D]  send succ: pid:0 offset:34725 topic:test
+2019/05/06 16:29:20.421 [D]  send succ: pid:0 offset:34726 topic:test
+2019/05/06 16:29:20.669 [D]  send succ: pid:0 offset:34727 topic:test
+2019/05/06 16:29:20.670 [D]  send succ: pid:0 offset:34728 topic:test
+2019/05/06 16:29:20.671 [D]  send succ: pid:0 offset:34729 topic:test
+2019/05/06 16:29:20.920 [D]  send succ: pid:0 offset:34730 topic:test
+2019/05/06 16:29:20.922 [D]  send succ: pid:0 offset:34731 topic:test
+2019/05/06 16:29:20.924 [D]  send succ: pid:0 offset:34732 topic:test
+2019/05/06 16:29:21.170 [D]  send succ: pid:0 offset:34733 topic:test
+2019/05/06 16:29:21.171 [D]  send succ: pid:0 offset:34734 topic:test
+2019/05/06 16:29:21.172 [D]  send succ: pid:0 offset:34735 topic:test
+2019/05/06 16:29:21.420 [D]  send succ: pid:0 offset:34736 topic:test
+2019/05/06 16:29:21.421 [D]  send succ: pid:0 offset:34737 topic:test
+2019/05/06 16:29:21.422 [D]  send succ: pid:0 offset:34738 topic:test
+2019/05/06 16:29:21.670 [D]  send succ: pid:0 offset:34739 topic:test
+2019/05/06 16:29:21.671 [D]  send succ: pid:0 offset:34740 topic:test
+2019/05/06 16:29:21.673 [D]  send succ: pid:0 offset:34741 topic:test
+2019/05/06 16:29:21.921 [D]  send succ: pid:0 offset:34742 topic:test
+2019/05/06 16:29:21.923 [D]  send succ: pid:0 offset:34743 topic:test
+2019/05/06 16:29:21.924 [D]  send succ: pid:0 offset:34744 topic:test
+2019/05/06 16:29:22.172 [D]  send succ: pid:0 offset:34745 topic:test
+2019/05/06 16:29:22.174 [D]  send succ: pid:0 offset:34746 topic:test
+2019/05/06 16:29:22.175 [D]  send succ: pid:0 offset:34747 topic:test
+2019/05/06 16:29:22.421 [D]  send succ: pid:0 offset:34748 topic:test
+2019/05/06 16:29:22.423 [D]  send succ: pid:0 offset:34749 topic:test
+2019/05/06 16:29:22.424 [D]  send succ: pid:0 offset:34750 topic:test
+2019/05/06 16:29:22.673 [D]  send succ: pid:0 offset:34751 topic:test
+2019/05/06 16:29:22.674 [D]  send succ: pid:0 offset:34752 topic:test
+2019/05/06 16:29:22.675 [D]  send succ: pid:0 offset:34753 topic:test
+2019/05/06 16:29:22.923 [D]  send succ: pid:0 offset:34754 topic:test
+2019/05/06 16:29:22.924 [D]  send succ: pid:0 offset:34755 topic:test
+2019/05/06 16:29:22.926 [D]  send succ: pid:0 offset:34756 topic:test
+2019/05/06 16:29:23.173 [D]  send succ: pid:0 offset:34757 topic:test
+2019/05/06 16:29:23.174 [D]  send succ: pid:0 offset:34758 topic:test
+2019/05/06 16:29:23.176 [D]  send succ: pid:0 offset:34759 topic:test
+2019/05/06 16:29:23.424 [D]  send succ: pid:0 offset:34760 topic:test
+2019/05/06 16:29:23.425 [D]  send succ: pid:0 offset:34761 topic:test
+2019/05/06 16:29:23.426 [D]  send succ: pid:0 offset:34762 topic:test
+2019/05/06 16:29:23.674 [D]  send succ: pid:0 offset:34763 topic:test
+2019/05/06 16:29:23.675 [D]  send succ: pid:0 offset:34764 topic:test
+2019/05/06 16:29:23.677 [D]  send succ: pid:0 offset:34765 topic:test
+2019/05/06 16:29:23.924 [D]  send succ: pid:0 offset:34766 topic:test
+2019/05/06 16:29:23.926 [D]  send succ: pid:0 offset:34767 topic:test
+2019/05/06 16:29:23.927 [D]  send succ: pid:0 offset:34768 topic:test
+2019/05/06 16:29:24.176 [D]  send succ: pid:0 offset:34769 topic:test
+2019/05/06 16:29:24.178 [D]  send succ: pid:0 offset:34770 topic:test
+2019/05/06 16:29:24.180 [D]  send succ: pid:0 offset:34771 topic:test
+2019/05/06 16:29:24.430 [D]  send succ: pid:0 offset:34772 topic:test
+2019/05/06 16:29:24.441 [D]  send succ: pid:0 offset:34773 topic:test
+2019/05/06 16:29:24.461 [D]  send succ: pid:0 offset:34774 topic:test
+2019/05/06 16:29:24.698 [D]  send succ: pid:0 offset:34775 topic:test
+2019/05/06 16:29:24.705 [D]  send succ: pid:0 offset:34776 topic:test
+2019/05/06 16:29:24.708 [D]  send succ: pid:0 offset:34777 topic:test
+2019/05/06 16:29:24.933 [D]  send succ: pid:0 offset:34778 topic:test
+2019/05/06 16:29:24.938 [D]  send succ: pid:0 offset:34779 topic:test
+2019/05/06 16:29:24.943 [D]  send succ: pid:0 offset:34780 topic:test
+2019/05/06 16:29:25.194 [D]  send succ: pid:0 offset:34781 topic:test
+2019/05/06 16:29:25.200 [D]  send succ: pid:0 offset:34782 topic:test
+2019/05/06 16:29:25.210 [D]  send succ: pid:0 offset:34783 topic:test
+2019/05/06 16:29:25.445 [D]  send succ: pid:0 offset:34784 topic:test
+2019/05/06 16:29:25.450 [D]  send succ: pid:0 offset:34785 topic:test
+2019/05/06 16:29:25.454 [D]  send succ: pid:0 offset:34786 topic:test
+2019/05/06 16:29:25.696 [D]  send succ: pid:0 offset:34787 topic:test
+2019/05/06 16:29:25.701 [D]  send succ: pid:0 offset:34788 topic:test
+2019/05/06 16:29:25.705 [D]  send succ: pid:0 offset:34789 topic:test
+2019/05/06 16:29:25.945 [D]  send succ: pid:0 offset:34790 topic:test
+2019/05/06 16:29:25.947 [D]  send succ: pid:0 offset:34791 topic:test
+2019/05/06 16:29:25.949 [D]  send succ: pid:0 offset:34792 topic:test
+2019/05/06 16:29:26.195 [D]  send succ: pid:0 offset:34793 topic:test
+2019/05/06 16:29:26.196 [D]  send succ: pid:0 offset:34794 topic:test
+2019/05/06 16:29:26.200 [D]  send succ: pid:0 offset:34795 topic:test
+2019/05/06 16:29:26.450 [D]  send succ: pid:0 offset:34796 topic:test
+2019/05/06 16:29:26.456 [D]  send succ: pid:0 offset:34797 topic:test
+2019/05/06 16:29:26.460 [D]  send succ: pid:0 offset:34798 topic:test
+2019/05/06 16:29:26.700 [D]  send succ: pid:0 offset:34799 topic:test
+2019/05/06 16:29:26.706 [D]  send succ: pid:0 offset:34800 topic:test
+2019/05/06 16:29:26.715 [D]  send succ: pid:0 offset:34801 topic:test
+2019/05/06 16:29:26.949 [D]  send succ: pid:0 offset:34802 topic:test
+2019/05/06 16:29:26.952 [D]  send succ: pid:0 offset:34803 topic:test
+2019/05/06 16:29:26.954 [D]  send succ: pid:0 offset:34804 topic:test
+2019/05/06 16:29:27.199 [D]  send succ: pid:0 offset:34805 topic:test
+2019/05/06 16:29:27.203 [D]  send succ: pid:0 offset:34806 topic:test
+2019/05/06 16:29:27.206 [D]  send succ: pid:0 offset:34807 topic:test
+2019/05/06 16:29:27.452 [D]  send succ: pid:0 offset:34808 topic:test
+2019/05/06 16:29:27.459 [D]  send succ: pid:0 offset:34809 topic:test
+2019/05/06 16:29:27.468 [D]  send succ: pid:0 offset:34810 topic:test
+2019/05/06 16:29:27.703 [D]  send succ: pid:0 offset:34811 topic:test
+2019/05/06 16:29:27.709 [D]  send succ: pid:0 offset:34812 topic:test
+2019/05/06 16:29:27.715 [D]  send succ: pid:0 offset:34813 topic:test
+2019/05/06 16:29:27.959 [D]  send succ: pid:0 offset:34814 topic:test
+2019/05/06 16:29:27.965 [D]  send succ: pid:0 offset:34815 topic:test
+2019/05/06 16:29:27.972 [D]  send succ: pid:0 offset:34816 topic:test
+2019/05/06 16:29:28.224 [D]  send succ: pid:0 offset:34817 topic:test
+2019/05/06 16:29:28.236 [D]  send succ: pid:0 offset:34818 topic:test
+2019/05/06 16:29:28.243 [D]  send succ: pid:0 offset:34819 topic:test
+2019/05/06 16:29:28.471 [D]  send succ: pid:0 offset:34820 topic:test
+2019/05/06 16:29:28.479 [D]  send succ: pid:0 offset:34821 topic:test
+2019/05/06 16:29:28.487 [D]  send succ: pid:0 offset:34822 topic:test
+2019/05/06 16:29:28.710 [D]  send succ: pid:0 offset:34823 topic:test
+2019/05/06 16:29:28.716 [D]  send succ: pid:0 offset:34824 topic:test
+2019/05/06 16:29:28.719 [D]  send succ: pid:0 offset:34825 topic:test
+2019/05/06 16:29:28.987 [D]  send succ: pid:0 offset:34826 topic:test
+2019/05/06 16:29:28.993 [D]  send succ: pid:0 offset:34827 topic:test
+2019/05/06 16:29:28.997 [D]  send succ: pid:0 offset:34828 topic:test
+2019/05/06 16:29:29.214 [D]  send succ: pid:0 offset:34829 topic:test
+2019/05/06 16:29:29.215 [D]  send succ: pid:0 offset:34830 topic:test
+2019/05/06 16:29:29.218 [D]  send succ: pid:0 offset:34831 topic:test
+2019/05/06 16:29:29.467 [D]  send succ: pid:0 offset:34832 topic:test
+2019/05/06 16:29:29.470 [D]  send succ: pid:0 offset:34833 topic:test
+2019/05/06 16:29:29.472 [D]  send succ: pid:0 offset:34834 topic:test
+2019/05/06 16:29:29.718 [D]  send succ: pid:0 offset:34835 topic:test
+2019/05/06 16:29:29.722 [D]  send succ: pid:0 offset:34836 topic:test
+2019/05/06 16:29:29.731 [D]  send succ: pid:0 offset:34837 topic:test
+2019/05/06 16:29:29.967 [D]  send succ: pid:0 offset:34838 topic:test
+2019/05/06 16:29:29.970 [D]  send succ: pid:0 offset:34839 topic:test
+2019/05/06 16:29:29.974 [D]  send succ: pid:0 offset:34840 topic:test
+2019/05/06 16:29:30.224 [D]  send succ: pid:0 offset:34841 topic:test
+2019/05/06 16:29:30.234 [D]  send succ: pid:0 offset:34842 topic:test
+2019/05/06 16:29:30.238 [D]  send succ: pid:0 offset:34843 topic:test
+2019/05/06 16:29:30.471 [D]  send succ: pid:0 offset:34844 topic:test
+2019/05/06 16:29:30.475 [D]  send succ: pid:0 offset:34845 topic:test
+2019/05/06 16:29:30.479 [D]  send succ: pid:0 offset:34846 topic:test
+2019/05/06 16:29:30.729 [D]  send succ: pid:0 offset:34847 topic:test
+2019/05/06 16:29:30.737 [D]  send succ: pid:0 offset:34848 topic:test
+2019/05/06 16:29:30.742 [D]  send succ: pid:0 offset:34849 topic:test
+2019/05/06 16:29:30.973 [D]  send succ: pid:0 offset:34850 topic:test
+2019/05/06 16:29:30.979 [D]  send succ: pid:0 offset:34851 topic:test
+2019/05/06 16:29:30.984 [D]  send succ: pid:0 offset:34852 topic:test
+2019/05/06 16:29:31.224 [D]  send succ: pid:0 offset:34853 topic:test
+2019/05/06 16:29:31.225 [D]  send succ: pid:0 offset:34854 topic:test
+2019/05/06 16:29:31.227 [D]  send succ: pid:0 offset:34855 topic:test
+2019/05/06 16:29:31.476 [D]  send succ: pid:0 offset:34856 topic:test
+2019/05/06 16:29:31.479 [D]  send succ: pid:0 offset:34857 topic:test
+2019/05/06 16:29:31.481 [D]  send succ: pid:0 offset:34858 topic:test
