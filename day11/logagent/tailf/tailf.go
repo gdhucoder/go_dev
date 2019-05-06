@@ -86,3 +86,8 @@ func readFromTail(tailObj *TailObj) {
 		tailObjMgr.msgChan <- textMsg
 	}
 }
+
+// update collector config, when receives a config update
+func UpdateConfig(collectConf []conf.Collector) {
+	return
+}
