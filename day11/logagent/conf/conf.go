@@ -16,8 +16,8 @@ type Config struct {
 }
 
 type Collector struct {
-	LogPath  string
-	Topic    string
+	LogPath  string `json:"logpath"`
+	Topic    string `json:"topic"`
 	ChanSize int
 }
 
