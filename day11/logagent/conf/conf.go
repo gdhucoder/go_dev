@@ -11,6 +11,7 @@ type Config struct {
 	LogPath   string
 	KafkaAddr string
 	EtcdAddr  string
+	EtcdKey   string
 	Collector []Collector
 }
 
@@ -50,6 +51,13 @@ func InitConf(configType, configPath string) (err error) {
 		panic("etcdAddr is not defined!")
 	}
 	AppConfig.EtcdAddr = etcdAddr
+
+	// etcd config
+	configKey := conf.String("etcd::configKey")
+	if len(configKey) == 0 {
+		panic("configKey is not defined!")
+	}
+	AppConfig.EtcdKey = configKey
 
 	return
 }

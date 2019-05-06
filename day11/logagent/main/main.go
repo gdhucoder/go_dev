@@ -32,11 +32,23 @@ func main() {
 		return
 	}
 
+	logs.Debug("init tailf success!")
+
 	err = kafka.InitKafka(conf.AppConfig.KafkaAddr)
 	if err != nil {
 		fmt.Printf("init kafka failed, err: %v\n", err)
 		return
 	}
+	logs.Debug("init kafka success!")
+
+	err = InitEctd(conf.AppConfig.EtcdAddr, conf.AppConfig.EtcdKey)
+	if err != nil {
+		fmt.Printf("init etcd failed, err: %v\n", err)
+		return
+	}
+	logs.Debug("init etcd success!")
+
+	logs.Debug("init all success!")
 
 	// go func() {
 	// 	var count int

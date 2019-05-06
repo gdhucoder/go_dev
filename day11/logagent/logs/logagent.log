@@ -1,0 +1,190 @@
+2019/05/06 14:49:31.966 [D]  init logger success!
+2019/05/06 14:49:31.966 [D]  init tailf success!
+2019/05/06 14:49:31.974 [D]  init Kafka succ!
+2019/05/06 14:49:31.974 [D]  init kafka success!
+2019/05/06 14:49:32.294 [D]  resp from etcd:[]
+2019/05/06 14:49:32.295 [D]  resp from etcd:[]
+2019/05/06 14:49:32.295 [D]  resp from etcd:[]
+2019/05/06 14:49:32.296 [D]  resp from etcd:[]
+2019/05/06 14:49:32.296 [D]  resp from etcd:[]
+2019/05/06 14:49:32.297 [D]  resp from etcd:[]
+2019/05/06 14:49:32.297 [D]  init etcd success!
+2019/05/06 14:49:32.297 [D]  init all success!
+2019/05/06 14:49:36.223 [D]  pid:0 offset:33940 topic:test
+2019/05/06 14:49:36.225 [D]  pid:0 offset:33941 topic:test
+2019/05/06 14:49:36.226 [D]  pid:0 offset:33942 topic:test
+2019/05/06 14:49:36.229 [D]  pid:0 offset:33943 topic:test
+2019/05/06 14:49:36.237 [D]  pid:0 offset:33944 topic:test
+2019/05/06 14:49:36.239 [D]  pid:0 offset:33945 topic:test
+2019/05/06 14:49:36.241 [D]  pid:0 offset:33946 topic:test
+2019/05/06 14:49:36.242 [D]  pid:0 offset:33947 topic:test
+2019/05/06 14:49:36.269 [D]  pid:0 offset:33948 topic:test
+2019/05/06 14:49:36.272 [D]  pid:0 offset:33949 topic:test
+2019/05/06 14:49:36.463 [D]  pid:0 offset:33950 topic:test
+2019/05/06 14:49:36.468 [D]  pid:0 offset:33951 topic:test
+2019/05/06 14:49:36.473 [D]  pid:0 offset:33952 topic:test
+2019/05/06 14:49:36.475 [D]  pid:0 offset:33953 topic:test
+2019/05/06 14:49:36.478 [D]  pid:0 offset:33954 topic:test
+2019/05/06 14:49:36.480 [D]  pid:0 offset:33955 topic:test
+2019/05/06 14:49:36.482 [D]  pid:0 offset:33956 topic:test
+2019/05/06 14:49:36.484 [D]  pid:0 offset:33957 topic:test
+2019/05/06 14:49:36.486 [D]  pid:0 offset:33958 topic:test
+2019/05/06 14:49:36.488 [D]  pid:0 offset:33959 topic:test
+2019/05/06 14:49:36.714 [D]  pid:0 offset:33960 topic:test
+2019/05/06 14:49:36.716 [D]  pid:0 offset:33961 topic:test
+2019/05/06 14:49:36.717 [D]  pid:0 offset:33962 topic:test
+2019/05/06 14:49:36.719 [D]  pid:0 offset:33963 topic:test
+2019/05/06 14:49:36.721 [D]  pid:0 offset:33964 topic:test
+2019/05/06 14:49:36.724 [D]  pid:0 offset:33965 topic:test
+2019/05/06 14:49:36.726 [D]  pid:0 offset:33966 topic:test
+2019/05/06 14:49:36.730 [D]  pid:0 offset:33967 topic:test
+2019/05/06 14:49:36.733 [D]  pid:0 offset:33968 topic:test
+2019/05/06 14:49:36.736 [D]  pid:0 offset:33969 topic:test
+2019/05/06 14:49:36.968 [D]  pid:0 offset:33970 topic:test
+2019/05/06 14:49:36.974 [D]  pid:0 offset:33971 topic:test
+2019/05/06 14:49:36.978 [D]  pid:0 offset:33972 topic:test
+2019/05/06 14:49:36.988 [D]  pid:0 offset:33973 topic:test
+2019/05/06 14:49:36.990 [D]  pid:0 offset:33974 topic:test
+2019/05/06 14:49:36.992 [D]  pid:0 offset:33975 topic:test
+2019/05/06 14:49:36.994 [D]  pid:0 offset:33976 topic:test
+2019/05/06 14:49:36.996 [D]  pid:0 offset:33977 topic:test
+2019/05/06 14:49:36.998 [D]  pid:0 offset:33978 topic:test
+2019/05/06 14:49:37.003 [D]  pid:0 offset:33979 topic:test
+2019/05/06 14:49:37.219 [D]  pid:0 offset:33980 topic:test
+2019/05/06 14:49:37.222 [D]  pid:0 offset:33981 topic:test
+2019/05/06 14:49:37.223 [D]  pid:0 offset:33982 topic:test
+2019/05/06 14:49:37.225 [D]  pid:0 offset:33983 topic:test
+2019/05/06 14:49:37.228 [D]  pid:0 offset:33984 topic:test
+2019/05/06 14:49:37.231 [D]  pid:0 offset:33985 topic:test
+2019/05/06 14:49:37.233 [D]  pid:0 offset:33986 topic:test
+2019/05/06 14:49:37.235 [D]  pid:0 offset:33987 topic:test
+2019/05/06 14:49:37.237 [D]  pid:0 offset:33988 topic:test
+2019/05/06 14:49:37.239 [D]  pid:0 offset:33989 topic:test
+2019/05/06 14:49:37.469 [D]  pid:0 offset:33990 topic:test
+2019/05/06 14:49:37.472 [D]  pid:0 offset:33991 topic:test
+2019/05/06 14:49:37.474 [D]  pid:0 offset:33992 topic:test
+2019/05/06 14:49:37.475 [D]  pid:0 offset:33993 topic:test
+2019/05/06 14:49:37.478 [D]  pid:0 offset:33994 topic:test
+2019/05/06 14:49:37.480 [D]  pid:0 offset:33995 topic:test
+2019/05/06 14:49:37.482 [D]  pid:0 offset:33996 topic:test
+2019/05/06 14:49:37.484 [D]  pid:0 offset:33997 topic:test
+2019/05/06 14:49:37.487 [D]  pid:0 offset:33998 topic:test
+2019/05/06 14:49:37.489 [D]  pid:0 offset:33999 topic:test
+2019/05/06 14:49:37.724 [D]  pid:0 offset:34000 topic:test
+2019/05/06 14:49:37.726 [D]  pid:0 offset:34001 topic:test
+2019/05/06 14:49:37.730 [D]  pid:0 offset:34002 topic:test
+2019/05/06 14:49:37.732 [D]  pid:0 offset:34003 topic:test
+2019/05/06 14:49:37.739 [D]  pid:0 offset:34004 topic:test
+2019/05/06 14:49:37.743 [D]  pid:0 offset:34005 topic:test
+2019/05/06 14:49:37.745 [D]  pid:0 offset:34006 topic:test
+2019/05/06 14:49:37.747 [D]  pid:0 offset:34007 topic:test
+2019/05/06 14:49:37.751 [D]  pid:0 offset:34008 topic:test
+2019/05/06 14:49:37.754 [D]  pid:0 offset:34009 topic:test
+2019/05/06 14:49:37.986 [D]  pid:0 offset:34010 topic:test
+2019/05/06 14:49:37.989 [D]  pid:0 offset:34011 topic:test
+2019/05/06 14:49:37.991 [D]  pid:0 offset:34012 topic:test
+2019/05/06 14:49:37.993 [D]  pid:0 offset:34013 topic:test
+2019/05/06 14:49:37.995 [D]  pid:0 offset:34014 topic:test
+2019/05/06 14:49:37.997 [D]  pid:0 offset:34015 topic:test
+2019/05/06 14:49:37.999 [D]  pid:0 offset:34016 topic:test
+2019/05/06 14:49:38.001 [D]  pid:0 offset:34017 topic:test
+2019/05/06 14:49:38.003 [D]  pid:0 offset:34018 topic:test
+2019/05/06 14:49:38.005 [D]  pid:0 offset:34019 topic:test
+2019/05/06 14:49:38.236 [D]  pid:0 offset:34020 topic:test
+2019/05/06 14:49:38.238 [D]  pid:0 offset:34021 topic:test
+2019/05/06 14:49:38.239 [D]  pid:0 offset:34022 topic:test
+2019/05/06 14:49:38.241 [D]  pid:0 offset:34023 topic:test
+2019/05/06 14:49:38.242 [D]  pid:0 offset:34024 topic:test
+2019/05/06 14:49:38.244 [D]  pid:0 offset:34025 topic:test
+2019/05/06 14:49:38.247 [D]  pid:0 offset:34026 topic:test
+2019/05/06 14:49:38.249 [D]  pid:0 offset:34027 topic:test
+2019/05/06 14:49:38.254 [D]  pid:0 offset:34028 topic:test
+2019/05/06 14:49:38.258 [D]  pid:0 offset:34029 topic:test
+2019/05/06 14:49:38.489 [D]  pid:0 offset:34030 topic:test
+2019/05/06 14:49:38.491 [D]  pid:0 offset:34031 topic:test
+2019/05/06 14:49:38.493 [D]  pid:0 offset:34032 topic:test
+2019/05/06 14:49:38.495 [D]  pid:0 offset:34033 topic:test
+2019/05/06 14:49:38.498 [D]  pid:0 offset:34034 topic:test
+2019/05/06 14:49:38.505 [D]  pid:0 offset:34035 topic:test
+2019/05/06 14:49:38.511 [D]  pid:0 offset:34036 topic:test
+2019/05/06 14:49:38.514 [D]  pid:0 offset:34037 topic:test
+2019/05/06 14:49:38.516 [D]  pid:0 offset:34038 topic:test
+2019/05/06 14:49:38.519 [D]  pid:0 offset:34039 topic:test
+2019/05/06 14:50:38.365 [D]  init logger success!
+2019/05/06 14:50:38.365 [D]  init tailf success!
+2019/05/06 14:50:38.374 [D]  init Kafka succ!
+2019/05/06 14:50:38.374 [D]  init kafka success!
+2019/05/06 14:50:38.699 [D]  resp from etcd:[]
+2019/05/06 14:50:38.700 [D]  resp from etcd:[]
+2019/05/06 14:50:38.701 [D]  resp from etcd:[]
+2019/05/06 14:50:38.702 [D]  resp from etcd:[]
+2019/05/06 14:50:38.703 [D]  resp from etcd:[]
+2019/05/06 14:50:38.704 [D]  resp from etcd:[]
+2019/05/06 14:50:38.704 [D]  init etcd success!
+2019/05/06 14:50:38.704 [D]  init all success!
+2019/05/06 15:53:27.129 [D]  init logger success!
+2019/05/06 15:53:27.130 [D]  init tailf success!
+2019/05/06 15:53:27.147 [D]  init Kafka succ!
+2019/05/06 15:53:27.147 [D]  init kafka success!
+2019/05/06 15:53:27.476 [D]  resp from etcd:[]
+2019/05/06 15:53:27.477 [D]  resp from etcd:[]
+2019/05/06 15:53:27.478 [D]  resp from etcd:[]
+2019/05/06 15:53:27.479 [D]  resp from etcd:[]
+2019/05/06 15:53:27.479 [D]  resp from etcd:[]
+2019/05/06 15:53:27.481 [D]  resp from etcd:[]
+2019/05/06 15:53:27.481 [D]  init etcd success!
+2019/05/06 15:53:27.481 [D]  init all success!
+2019/05/06 15:55:26.213 [D]  init logger success!
+2019/05/06 15:55:26.213 [D]  init tailf success!
+2019/05/06 15:55:26.220 [D]  init Kafka succ!
+2019/05/06 15:55:26.220 [D]  init kafka success!
+2019/05/06 15:55:26.227 [D]  ectdKey: /logagent/config/%!s(int=0)
+2019/05/06 15:55:26.547 [D]  resp from etcd:[]
+2019/05/06 15:55:26.547 [D]  ectdKey: /logagent/config/%!s(int=1)
+2019/05/06 15:55:26.548 [D]  resp from etcd:[]
+2019/05/06 15:55:26.548 [D]  ectdKey: /logagent/config/%!s(int=2)
+2019/05/06 15:55:26.549 [D]  resp from etcd:[]
+2019/05/06 15:55:26.549 [D]  ectdKey: /logagent/config/%!s(int=3)
+2019/05/06 15:55:26.551 [D]  resp from etcd:[]
+2019/05/06 15:55:26.551 [D]  ectdKey: /logagent/config/%!s(int=4)
+2019/05/06 15:55:26.552 [D]  resp from etcd:[]
+2019/05/06 15:55:26.552 [D]  ectdKey: /logagent/config/%!s(int=5)
+2019/05/06 15:55:26.553 [D]  resp from etcd:[]
+2019/05/06 15:55:26.569 [D]  init etcd success!
+2019/05/06 15:55:26.569 [D]  init all success!
+2019/05/06 15:56:35.023 [D]  init logger success!
+2019/05/06 15:56:35.024 [D]  init tailf success!
+2019/05/06 15:56:35.043 [D]  init Kafka succ!
+2019/05/06 15:56:35.043 [D]  init kafka success!
+2019/05/06 15:56:35.050 [D]  ectdKey: /logagent/config/169.254.34.53
+2019/05/06 15:56:35.371 [D]  resp from etcd:[]
+2019/05/06 15:56:35.371 [D]  ectdKey: /logagent/config/169.254.252.17
+2019/05/06 15:56:35.372 [D]  resp from etcd:[]
+2019/05/06 15:56:35.372 [D]  ectdKey: /logagent/config/172.17.183.1
+2019/05/06 15:56:35.373 [D]  resp from etcd:[]
+2019/05/06 15:56:35.373 [D]  ectdKey: /logagent/config/169.254.122.129
+2019/05/06 15:56:35.373 [D]  resp from etcd:[]
+2019/05/06 15:56:35.374 [D]  ectdKey: /logagent/config/172.26.66.1
+2019/05/06 15:56:35.374 [D]  resp from etcd:[]
+2019/05/06 15:56:35.374 [D]  ectdKey: /logagent/config/192.168.31.224
+2019/05/06 15:56:35.377 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:26 version:1 value:"[{\"path\":\"D:\\\\project\\\\src\\\\go_dev\\\\day11\\\\logagent\\\\logs\\\\logagent.log\",\"topic\":\"test\"}]" ]
+2019/05/06 15:56:35.377 [D]  init etcd success!
+2019/05/06 15:56:35.377 [D]  init all success!
+2019/05/06 15:58:45.717 [D]  init logger success!
+2019/05/06 15:58:45.717 [D]  init tailf success!
+2019/05/06 15:58:45.723 [D]  init Kafka succ!
+2019/05/06 15:58:45.723 [D]  init kafka success!
+2019/05/06 15:58:45.729 [D]  ectdKey: /logagent/config/169.254.34.53
+2019/05/06 15:58:46.043 [D]  resp from etcd:[]
+2019/05/06 15:58:46.043 [D]  ectdKey: /logagent/config/169.254.252.17
+2019/05/06 15:58:46.044 [D]  resp from etcd:[]
+2019/05/06 15:58:46.044 [D]  ectdKey: /logagent/config/172.17.183.1
+2019/05/06 15:58:46.045 [D]  resp from etcd:[]
+2019/05/06 15:58:46.045 [D]  ectdKey: /logagent/config/169.254.122.129
+2019/05/06 15:58:46.046 [D]  resp from etcd:[]
+2019/05/06 15:58:46.046 [D]  ectdKey: /logagent/config/172.26.66.1
+2019/05/06 15:58:46.046 [D]  resp from etcd:[]
+2019/05/06 15:58:46.046 [D]  ectdKey: /logagent/config/192.168.31.224
+2019/05/06 15:58:46.047 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:27 version:2 value:"[{\"path\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\"}]" ]
+2019/05/06 15:58:46.047 [D]  init etcd success!
+2019/05/06 15:58:46.047 [D]  init all success!

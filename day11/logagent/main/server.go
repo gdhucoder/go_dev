@@ -13,5 +13,5 @@ func runServer() {
 		fmt.Printf("msg: %s, topic: %s\n", msg.Msg, msg.Topic)
 		kafka.SendToKafka(msg.Msg, msg.Topic)
 	}
-	return
+	// return
 }
