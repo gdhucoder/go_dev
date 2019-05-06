@@ -215,3 +215,27 @@ msg: &{在此测试
 PS D:\project> go build D:\project\src\go_dev\day12\etcd_put\
 PS D:\project> D:\project\etcd_put.exe
 
+
+### etcd介绍和使用
+
+概念：高可用的分布式key-value存储，可以用于配置共享和服务发现
+
+类似项目：zookeeper和consul
+
+开发语言：Go
+
+接口：提供Restful的http接口，使用简单
+
+实现算法：基于raft算法的强一致性，高可用的服务存储目录
+
+### etcd的应用场景
+
+- 服务发现和服务注册
+
+- 配置中心
+
+- 分布式锁
+
+- master选举
+
+https://github.com/etcd-io/etcd/releases/

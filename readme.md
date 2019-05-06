@@ -102,6 +102,12 @@ https://www.elastic.co/cn/products/kibana
 
 https://github.com/etcd-io/etcd/releases/
 
+#### 将配置写入ETCD中
+
+将收集日志的IP和路径写入ECTD中，logagent部署到客户端机器上后，可以注册配置，收集对应目录的日志，并发送给kafka
+
+
+
 
 elastic search介绍和使用
 
