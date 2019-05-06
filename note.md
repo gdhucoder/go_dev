@@ -259,3 +259,25 @@ different clients :
 \backend\logagent\192.168.104.1  [{logpath, topic}, ...]
 \backend\logagent\192.168.104.165  [{logpath, topic}, ...]
 ```
+
+#### 本地运行 zk kafka etcd
+
+D:\project\opensource\kafka_2.12-2.2.0\bin\windows
+
+bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+
+bin/windows/kafka-server-start.bat config/server.properties
+
+bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+
+
+bin/windows/kafka-topics.bat --list --bootstrap-server localhost:9092
+
+bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test
+
+bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+bin/windows/kafka-server-stop.bat
+
+bin/windows/zookeeper-server-stop.bat
