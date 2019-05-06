@@ -25,8 +25,16 @@ func main() {
 	}
 	logs.Debug("init logger success!")
 
-	// init tailf
-	err = tailf.InitTailF(conf.AppConfig.Collector)
+	// init etcd
+	collectConf, err := InitEctd(conf.AppConfig.EtcdAddr, conf.AppConfig.EtcdKey)
+	if err != nil {
+		fmt.Printf("init etcd failed, err: %v\n", err)
+		return
+	}
+	logs.Debug("init etcd success!")
+
+	// init tailf (config in etcd)
+	err = tailf.InitTailF(collectConf)
 	if err != nil {
 		fmt.Printf("init tailf failed, err: %v\n", err)
 		return
@@ -40,13 +48,6 @@ func main() {
 		return
 	}
 	logs.Debug("init kafka success!")
-
-	err = InitEctd(conf.AppConfig.EtcdAddr, conf.AppConfig.EtcdKey)
-	if err != nil {
-		fmt.Printf("init etcd failed, err: %v\n", err)
-		return
-	}
-	logs.Debug("init etcd success!")
 
 	logs.Debug("init all success!")
 

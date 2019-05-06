@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"go_dev/day11/logagent/conf"
 	"time"
 
 	"github.com/astaxie/beego/logs"
@@ -17,7 +19,11 @@ var (
 	etcdClient *EtcdClient
 )
 
-func InitEctd(ectdaddr string, key string) (err error) {
+// save config: logpath topic
+var collectConf []conf.Collector
+
+// move config setting in config file to ETCD
+func InitEctd(ectdaddr string, key string) (collectConf []conf.Collector, err error) {
 
 	cli, err := etcd_client.New(etcd_client.Config{
 		Endpoints:   []string{"localhost:2379", "localhost:22379", "localhost:32379"},
@@ -43,8 +49,15 @@ func InitEctd(ectdaddr string, key string) (err error) {
 			continue
 		}
 		logs.Debug("resp from etcd:%v", resp.Kvs)
-		for k, v := range resp.Kvs {
-			fmt.Println("=============", k, v)
+		for _, v := range resp.Kvs {
+			if string(v.Key) == etcdKey {
+				err = json.Unmarshal(v.Value, &collectConf)
+				if err != nil {
+					logs.Error("unmarshal failed, err:", err)
+					continue
+				}
+			}
+			logs.Debug("log config is %v", collectConf)
 		}
 
 	}

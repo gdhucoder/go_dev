@@ -10,7 +10,7 @@ func runServer() {
 	fmt.Println("server is running.")
 	for {
 		msg := tailf.GetOneLine() // read from log
-		fmt.Printf("msg: %s, topic: %s\n", msg.Msg, msg.Topic)
+		fmt.Printf("read by tailf, sending to kafka -> msg: %s, topic: %s\n", msg.Msg, msg.Topic)
 		kafka.SendToKafka(msg.Msg, msg.Topic)
 	}
 	// return
