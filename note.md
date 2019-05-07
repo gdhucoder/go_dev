@@ -260,6 +260,22 @@ different clients :
 \backend\logagent\192.168.104.165  [{logpath, topic}, ...]
 ```
 
+####通过ETCD更新配置
+
+client拿到新的配置后：
+
+1、如果是新增了一个收集的config则新启动一个收集日志goroutine
+
+2、如果是删除了一个config，那么关闭一个
+
+```
+2019/05/07 15:27:54 Waiting for D:/project/src/go_dev/day11/logagent/logs/logagent_error.log to appear...
+read by tailf, sending to kafka -> msg: 2019/05/07 15:27:21.254 [D]  init logger success!, topic: test
+read by tailf, sending to kafka -> msg: 2019/05/07 15:27:21.260 [D]  ectdKey: /logagent/config/169.254.34.53, topic: test
+read by tailf, sending to kafka -> msg: 2019/05/07 15:27:21.581 [D]  resp from etcd:[], topic: test
+```
+
+
 #### 本地运行 zk kafka etcd
 
 D:\project\opensource\kafka_2.12-2.2.0\bin\windows

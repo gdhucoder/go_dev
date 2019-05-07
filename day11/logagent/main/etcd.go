@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"go_dev/day11/logagent/conf"
+	"go_dev/day11/logagent/tailf"
 	"time"
 
 	"go.etcd.io/etcd/mvcc/mvccpb"
@@ -101,6 +102,9 @@ func watchKey(key string) {
 			for _, ev := range wresp.Events {
 				if ev.Type == mvccpb.DELETE {
 					logs.Warn("key[%s] is deleted", key)
+					// client exit
+
+					// TODO exit
 					continue
 				}
 				// PUT "/logagent/config/192.168.31.224" : "[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]"

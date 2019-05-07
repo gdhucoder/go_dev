@@ -3,15 +3,23 @@ package tailf
 import (
 	"fmt"
 	"go_dev/day11/logagent/conf"
+	"sync"
 	"time"
 
 	"github.com/astaxie/beego/logs"
 	"github.com/hpcloud/tail"
 )
 
+const (
+	StatusNormal = 1
+	StatusDelete = 2
+)
+
 type TailObj struct {
 	tail        *tail.Tail     // each tail reads  a log file
 	collectConf conf.Collector // config in ini file
+	exitChan    chan int       // exit channel
+	status      int
 }
 
 // message send to kafka, inclues msg, and topic
@@ -24,6 +32,7 @@ type TextMsg struct {
 type TailObjMgr struct {
 	tailObjs []*TailObj
 	msgChan  chan *TextMsg
+	lock     sync.Mutex
 }
 
 var (
@@ -38,7 +47,7 @@ func GetOneLine() (msg *TextMsg) {
 func InitTailF(collectors []conf.Collector) (err error) {
 
 	if len(collectors) == 0 {
-		panic("no collector definied!")
+		logs.Warn("no collector definied!")
 	}
 
 	tailObjMgr = &TailObjMgr{
@@ -46,48 +55,93 @@ func InitTailF(collectors []conf.Collector) (err error) {
 	}
 
 	for _, v := range collectors {
-		tails, tailErr := tail.TailFile(v.LogPath, tail.Config{
-			ReOpen:    true,
-			Follow:    true,
-			Location:  &tail.SeekInfo{Offset: 0, Whence: 2},
-			MustExist: false,
-			Poll:      true,
-		})
-		if tailErr != nil {
-			fmt.Println("tail file err:", tailErr)
-			err = tailErr
-			return
-		}
-
-		tailObj := &TailObj{
-			tail:        tails,
-			collectConf: v,
-		}
-
-		tailObjMgr.tailObjs = append(tailObjMgr.tailObjs, tailObj)
-		go readFromTail(tailObj)
+		createNewTask(v)
 	}
 	return
 }
 
 func readFromTail(tailObj *TailObj) {
 	for true {
-		line, ok := <-tailObj.tail.Lines
-		if !ok {
-			logs.Warn("tail file close reopen, filename:%s\n", tailObj.tail.Filename)
-			time.Sleep(100 * time.Millisecond)
-			continue
+		select {
+		case line, ok := <-tailObj.tail.Lines:
+			if !ok {
+				logs.Warn("tail file close reopen, filename:%s\n", tailObj.tail.Filename)
+				time.Sleep(100 * time.Millisecond)
+				continue
+			}
+			textMsg := &TextMsg{
+				Msg:   line.Text,
+				Topic: tailObj.collectConf.Topic,
+			}
+			tailObjMgr.msgChan <- textMsg
+		case <-tailObj.exitChan:
+			logs.Warn("tail object exits, conf: %v", tailObj.collectConf)
+			return
 		}
-
-		textMsg := &TextMsg{
-			Msg:   line.Text,
-			Topic: tailObj.collectConf.Topic,
-		}
-		tailObjMgr.msgChan <- textMsg
 	}
 }
 
 // update collector config, when receives a config update
-func UpdateConfig(collectConf []conf.Collector) {
+func UpdateConfig(confs []conf.Collector) {
+	// add lock
+	tailObjMgr.lock.Lock()
+	defer tailObjMgr.lock.Unlock()
+
+	for _, oneConf := range confs {
+		var isRunning = false
+		for _, v := range tailObjMgr.tailObjs {
+			if oneConf.LogPath == v.collectConf.LogPath {
+				isRunning = true
+				break
+			}
+		}
+		if isRunning {
+			continue
+		}
+		logs.Debug("create a new tail task, %v", oneConf)
+		createNewTask(oneConf)
+	}
+
+	// delete and save exists tasks!
+	var tailObjs []*TailObj
+	for _, obj := range tailObjMgr.tailObjs {
+		obj.status = StatusDelete
+		for _, oneConf := range confs {
+			if oneConf.LogPath == obj.collectConf.LogPath {
+				obj.status = StatusNormal
+				break
+			}
+		}
+		if obj.status == StatusDelete {
+			obj.exitChan <- 1 // delete task
+			continue
+		}
+		tailObjs = append(tailObjs, obj)
+	}
+	tailObjMgr.tailObjs = tailObjs // save existing tailObjs
 	return
+}
+
+func createNewTask(conf conf.Collector) {
+	tails, tailErr := tail.TailFile(conf.LogPath, tail.Config{
+		ReOpen: true,
+		Follow: true,
+		// Location:  &tail.SeekInfo{Offset: 0, Whence: 2},
+		MustExist: false,
+		Poll:      true,
+	})
+	if tailErr != nil {
+		fmt.Println("tail file err:", tailErr)
+		logs.Error("collect filename[%s] failed, err:%v", conf.LogPath, tailErr)
+		return
+	}
+
+	tailObj := &TailObj{
+		tail:        tails,
+		collectConf: conf,
+		exitChan:    make(chan int, 1),
+	}
+
+	tailObjMgr.tailObjs = append(tailObjMgr.tailObjs, tailObj)
+	go readFromTail(tailObj)
 }

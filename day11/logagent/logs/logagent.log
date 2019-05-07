@@ -1,135 +1,36 @@
-2019/05/06 16:50:43.898 [D]  init logger success!
-2019/05/06 16:50:43.903 [D]  ectdKey: /logagent/config/169.254.34.53
-2019/05/06 16:50:44.221 [D]  resp from etcd:[]
-2019/05/06 16:50:44.221 [D]  ectdKey: /logagent/config/169.254.252.17
-2019/05/06 16:50:44.223 [D]  resp from etcd:[]
-2019/05/06 16:50:44.223 [D]  ectdKey: /logagent/config/172.17.183.1
-2019/05/06 16:50:44.225 [D]  resp from etcd:[]
-2019/05/06 16:50:44.225 [D]  ectdKey: /logagent/config/169.254.122.129
-2019/05/06 16:50:44.234 [D]  resp from etcd:[]
-2019/05/06 16:50:44.234 [D]  ectdKey: /logagent/config/172.26.66.1
-2019/05/06 16:50:44.235 [D]  resp from etcd:[]
-2019/05/06 16:50:44.235 [D]  ectdKey: /logagent/config/192.168.31.224
-2019/05/06 16:50:44.238 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:28 version:3 value:"[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]" ]
-2019/05/06 16:50:44.238 [D]  log config is [{D:/project/src/go_dev/day11/logagent/logs/logagent.log test 0}]
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/169.254.34.53
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/169.254.252.17
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/172.17.183.1
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/169.254.122.129
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/172.26.66.1
-2019/05/06 16:50:44.239 [D]  ectd is watching:  /logagent/config/192.168.31.224
-2019/05/06 16:50:44.239 [D]  init etcd success!
-2019/05/06 16:50:44.239 [D]  init tailf success!
-2019/05/06 16:50:44.262 [D]  init Kafka succ!
-2019/05/06 16:50:44.262 [D]  init kafka success!
-2019/05/06 16:50:44.262 [D]  init all success!
-2019/05/06 16:53:16.447 [D]  send succ: pid:0 offset:34859 topic:test
-2019/05/06 16:53:21.450 [D]  send succ: pid:0 offset:34860 topic:test
-2019/05/06 16:53:26.452 [D]  send succ: pid:0 offset:34861 topic:test
-2019/05/06 16:53:31.454 [D]  send succ: pid:0 offset:34862 topic:test
-2019/05/06 16:53:36.455 [D]  send succ: pid:0 offset:34863 topic:test
-2019/05/06 16:53:41.457 [D]  send succ: pid:0 offset:34864 topic:test
-2019/05/06 16:53:46.460 [D]  send succ: pid:0 offset:34865 topic:test
-2019/05/06 16:53:51.461 [D]  send succ: pid:0 offset:34866 topic:test
-2019/05/06 16:53:56.469 [D]  send succ: pid:0 offset:34867 topic:test
-2019/05/06 16:54:01.484 [D]  send succ: pid:0 offset:34868 topic:test
-2019/05/06 16:54:06.487 [D]  send succ: pid:0 offset:34869 topic:test
-2019/05/06 16:54:11.490 [D]  send succ: pid:0 offset:34870 topic:test
-2019/05/06 16:54:16.493 [D]  send succ: pid:0 offset:34871 topic:test
-2019/05/06 16:54:21.494 [D]  send succ: pid:0 offset:34872 topic:test
-2019/05/06 16:54:26.497 [D]  send succ: pid:0 offset:34873 topic:test
-2019/05/06 16:54:31.507 [D]  send succ: pid:0 offset:34874 topic:test
-2019/05/06 16:54:36.507 [D]  send succ: pid:0 offset:34875 topic:test
-2019/05/06 16:54:41.514 [D]  send succ: pid:0 offset:34876 topic:test
-2019/05/06 16:54:46.517 [D]  send succ: pid:0 offset:34877 topic:test
-2019/05/06 16:54:51.521 [D]  send succ: pid:0 offset:34878 topic:test
-2019/05/06 16:54:56.523 [D]  send succ: pid:0 offset:34879 topic:test
-2019/05/06 16:55:01.525 [D]  send succ: pid:0 offset:34880 topic:test
-2019/05/06 16:55:06.528 [D]  send succ: pid:0 offset:34881 topic:test
-2019/05/06 16:55:11.530 [D]  send succ: pid:0 offset:34882 topic:test
-2019/05/06 16:55:16.532 [D]  send succ: pid:0 offset:34883 topic:test
-2019/05/06 16:55:21.536 [D]  send succ: pid:0 offset:34884 topic:test
-2019/05/06 16:55:26.541 [D]  send succ: pid:0 offset:34885 topic:test
-2019/05/06 16:55:31.544 [D]  send succ: pid:0 offset:34886 topic:test
-2019/05/06 16:55:36.547 [D]  send succ: pid:0 offset:34887 topic:test
-2019/05/06 16:55:41.549 [D]  send succ: pid:0 offset:34888 topic:test
-2019/05/06 16:55:46.550 [D]  send succ: pid:0 offset:34889 topic:test
-2019/05/06 16:55:51.553 [D]  send succ: pid:0 offset:34890 topic:test
-2019/05/06 16:55:56.557 [D]  send succ: pid:0 offset:34891 topic:test
-2019/05/06 16:56:01.560 [D]  send succ: pid:0 offset:34892 topic:test
-2019/05/06 16:56:06.563 [D]  send succ: pid:0 offset:34893 topic:test
-2019/05/06 16:56:11.564 [D]  send succ: pid:0 offset:34894 topic:test
-2019/05/06 16:56:16.573 [D]  send succ: pid:0 offset:34895 topic:test
-2019/05/06 16:56:21.576 [D]  send succ: pid:0 offset:34896 topic:test
-2019/05/06 16:56:26.577 [D]  send succ: pid:0 offset:34897 topic:test
-2019/05/06 16:56:31.579 [D]  send succ: pid:0 offset:34898 topic:test
-2019/05/06 16:56:36.580 [D]  send succ: pid:0 offset:34899 topic:test
-2019/05/06 16:56:41.581 [D]  send succ: pid:0 offset:34900 topic:test
-2019/05/06 16:56:46.583 [D]  send succ: pid:0 offset:34901 topic:test
-2019/05/06 16:56:51.585 [D]  send succ: pid:0 offset:34902 topic:test
-2019/05/06 16:56:56.588 [D]  send succ: pid:0 offset:34903 topic:test
-2019/05/06 16:57:01.590 [D]  send succ: pid:0 offset:34904 topic:test
-2019/05/06 16:57:06.595 [D]  send succ: pid:0 offset:34905 topic:test
-2019/05/06 16:57:11.597 [D]  send succ: pid:0 offset:34906 topic:test
-2019/05/06 16:57:16.611 [D]  send succ: pid:0 offset:34907 topic:test
-2019/05/06 16:57:21.612 [D]  send succ: pid:0 offset:34908 topic:test
-2019/05/06 16:57:26.615 [D]  send succ: pid:0 offset:34909 topic:test
-2019/05/06 16:57:31.621 [D]  send succ: pid:0 offset:34910 topic:test
-2019/05/06 16:57:36.625 [D]  send succ: pid:0 offset:34911 topic:test
-2019/05/06 16:57:41.628 [D]  send succ: pid:0 offset:34912 topic:test
-2019/05/06 16:57:46.631 [D]  send succ: pid:0 offset:34913 topic:test
-2019/05/06 16:57:51.634 [D]  send succ: pid:0 offset:34914 topic:test
-2019/05/06 16:57:56.637 [D]  send succ: pid:0 offset:34915 topic:test
-2019/05/06 16:58:01.639 [D]  send succ: pid:0 offset:34916 topic:test
-2019/05/06 16:58:06.642 [D]  send succ: pid:0 offset:34917 topic:test
-2019/05/06 16:58:11.644 [D]  send succ: pid:0 offset:34918 topic:test
-2019/05/06 16:58:16.646 [D]  send succ: pid:0 offset:34919 topic:test
-2019/05/06 16:58:21.649 [D]  send succ: pid:0 offset:34920 topic:test
-2019/05/06 16:58:26.656 [D]  send succ: pid:0 offset:34921 topic:test
-2019/05/06 16:58:31.659 [D]  send succ: pid:0 offset:34922 topic:test
-2019/05/06 16:58:36.661 [D]  send succ: pid:0 offset:34923 topic:test
-2019/05/06 16:58:41.664 [D]  send succ: pid:0 offset:34924 topic:test
-2019/05/06 16:58:46.668 [D]  send succ: pid:0 offset:34925 topic:test
-2019/05/06 16:58:51.668 [D]  send succ: pid:0 offset:34926 topic:test
-2019/05/06 16:58:56.671 [D]  send succ: pid:0 offset:34927 topic:test
-2019/05/06 16:59:01.673 [D]  send succ: pid:0 offset:34928 topic:test
-2019/05/06 16:59:06.675 [D]  send succ: pid:0 offset:34929 topic:test
-2019/05/06 16:59:11.678 [D]  send succ: pid:0 offset:34930 topic:test
-2019/05/06 16:59:16.681 [D]  send succ: pid:0 offset:34931 topic:test
-2019/05/06 16:59:36.518 [D]  init logger success!
-2019/05/06 16:59:36.524 [D]  ectdKey: /logagent/config/169.254.34.53
-2019/05/06 16:59:36.858 [D]  resp from etcd:[]
-2019/05/06 16:59:36.858 [D]  ectdKey: /logagent/config/169.254.252.17
-2019/05/06 16:59:36.859 [D]  resp from etcd:[]
-2019/05/06 16:59:36.859 [D]  ectdKey: /logagent/config/172.17.183.1
-2019/05/06 16:59:36.860 [D]  resp from etcd:[]
-2019/05/06 16:59:36.860 [D]  ectdKey: /logagent/config/169.254.122.129
-2019/05/06 16:59:36.861 [D]  resp from etcd:[]
-2019/05/06 16:59:36.861 [D]  ectdKey: /logagent/config/172.26.66.1
-2019/05/06 16:59:36.862 [D]  resp from etcd:[]
-2019/05/06 16:59:36.862 [D]  ectdKey: /logagent/config/192.168.31.224
-2019/05/06 16:59:36.864 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:26 mod_revision:33 version:8 value:"[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]" ]
-2019/05/06 16:59:36.864 [D]  log config is [{D:/project/src/go_dev/day11/logagent/logs/logagent.log test 0}]
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/169.254.34.53
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/169.254.252.17
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/172.17.183.1
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/169.254.122.129
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/172.26.66.1
-2019/05/06 16:59:36.864 [D]  ectd is watching:  /logagent/config/192.168.31.224
-2019/05/06 16:59:36.864 [D]  init etcd success!
-2019/05/06 16:59:36.865 [D]  init tailf success!
-2019/05/06 16:59:36.881 [D]  init Kafka succ!
-2019/05/06 16:59:36.881 [D]  init kafka success!
-2019/05/06 16:59:36.881 [D]  init all success!
-2019/05/06 16:59:37.150 [D]  send succ: pid:0 offset:34932 topic:test
-2019/05/06 16:59:42.152 [D]  send succ: pid:0 offset:34933 topic:test
-2019/05/06 16:59:47.163 [D]  send succ: pid:0 offset:34934 topic:test
-2019/05/06 16:59:49.695 [D]  PUT "/logagent/config/192.168.31.224" : "[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]"
+2019/05/07 16:22:15.796 [D]  init logger success!
+2019/05/07 16:22:15.802 [D]  ectdKey: /logagent/config/169.254.34.53
+2019/05/07 16:22:16.133 [D]  resp from etcd:[]
+2019/05/07 16:22:16.133 [D]  ectdKey: /logagent/config/169.254.252.17
+2019/05/07 16:22:16.135 [D]  resp from etcd:[]
+2019/05/07 16:22:16.135 [D]  ectdKey: /logagent/config/172.17.183.1
+2019/05/07 16:22:16.138 [D]  resp from etcd:[]
+2019/05/07 16:22:16.138 [D]  ectdKey: /logagent/config/169.254.122.129
+2019/05/07 16:22:16.140 [D]  resp from etcd:[]
+2019/05/07 16:22:16.140 [D]  ectdKey: /logagent/config/172.26.66.1
+2019/05/07 16:22:16.142 [D]  resp from etcd:[]
+2019/05/07 16:22:16.142 [D]  ectdKey: /logagent/config/192.168.31.224
+2019/05/07 16:22:16.145 [D]  resp from etcd:[key:"/logagent/config/192.168.31.224" create_revision:45 mod_revision:45 version:1 value:"[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0}]" ]
+2019/05/07 16:22:16.145 [D]  log config is [{D:/project/src/go_dev/day11/logagent/logs/logagent.log test 0}]
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/169.254.34.53
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/169.254.252.17
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/172.17.183.1
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/169.254.122.129
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/172.26.66.1
+2019/05/07 16:22:16.146 [D]  ectd is watching:  /logagent/config/192.168.31.224
+2019/05/07 16:22:16.146 [D]  init etcd success!
+2019/05/07 16:22:16.146 [D]  init tailf success!
+2019/05/07 16:22:16.173 [D]  init Kafka succ!
+2019/05/07 16:22:16.173 [D]  init kafka success!
+2019/05/07 16:22:16.173 [D]  init all success!
+2019/05/07 16:22:16.191 [D]  send succ: pid:0 offset:35128 topic:test
+2019/05/07 16:22:21.194 [D]  send succ: pid:0 offset:35129 topic:test
+2019/05/07 16:22:26.196 [D]  send succ: pid:0 offset:35130 topic:test
+2019/05/07 16:22:31.199 [D]  send succ: pid:0 offset:35131 topic:test
+2019/05/07 16:22:36.203 [D]  send succ: pid:0 offset:35132 topic:test
+2019/05/07 16:22:40.887 [D]  PUT "/logagent/config/192.168.31.224" : "[{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent.log\",\"topic\":\"test\",\"ChanSize\":0},{\"logpath\":\"D:/project/src/go_dev/day11/logagent/logs/logagent_error.log\",\"topic\":\"test_error\",\"ChanSize\":0}]"
 
-2019/05/06 16:59:52.170 [D]  send succ: pid:0 offset:34935 topic:test
-2019/05/06 16:59:57.173 [D]  send succ: pid:0 offset:34936 topic:test
-2019/05/06 17:00:02.176 [D]  send succ: pid:0 offset:34937 topic:test
-2019/05/06 17:00:07.178 [D]  send succ: pid:0 offset:34938 topic:test
-2019/05/06 17:00:12.182 [D]  send succ: pid:0 offset:34939 topic:test
-2019/05/06 17:00:17.186 [D]  send succ: pid:0 offset:34940 topic:test
-2019/05/06 17:00:22.188 [D]  send succ: pid:0 offset:34941 topic:test
+2019/05/07 16:22:40.887 [D]  create a new tail task, {D:/project/src/go_dev/day11/logagent/logs/logagent_error.log test_error 0}
+2019/05/07 16:22:41.208 [D]  send succ: pid:0 offset:35133 topic:test
+2019/05/07 16:22:46.212 [D]  send succ: pid:0 offset:35134 topic:test
+2019/05/07 16:22:51.215 [D]  send succ: pid:0 offset:35135 topic:test

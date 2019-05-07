@@ -44,13 +44,13 @@ func SetLogConfigToEtcd() {
 		},
 	)
 
-	// longConfArr = append(
-	// 	longConfArr,
-	// 	conf.Collector{
-	// 		LogPath: "D:/project/src/go_dev/day11/logagent/logs/logagent_error.log",
-	// 		Topic:   "test_error",
-	// 	},
-	// )
+	longConfArr = append(
+		longConfArr,
+		conf.Collector{
+			LogPath: "D:/project/src/go_dev/day11/logagent/logs/logagent_error.log",
+			Topic:   "test_error",
+		},
+	)
 
 	data, err := json.Marshal(longConfArr)
 	if err != nil {
@@ -58,6 +58,11 @@ func SetLogConfigToEtcd() {
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
+
+	// cli.Delete(ctx, EtcdKey)
+	// fmt.Println("delete success!")
+	// return
+
 	_, err = cli.Put(ctx, EtcdKey, string(data))
 	if err != nil {
 		fmt.Println("etcd put failed, err:", err)
