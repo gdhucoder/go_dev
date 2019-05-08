@@ -302,3 +302,15 @@ bin/windows/zookeeper-server-stop.bat
 #### ngiix
 
 nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP/UDP proxy server, originally written by Igor Sysoev. 
+
+#### 打通Kafka ES Kibana
+
+	// initConfig
+
+	// initLog
+
+	// initKafkaConsuemr
+
+	// initES
+
+	// runServer: kafka consuemr send message to ES, then Kibana
