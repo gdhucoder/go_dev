@@ -305,6 +305,9 @@ nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a
 
 #### 打通Kafka ES Kibana
 
+```go
+func main(){
+
 	// initConfig
 
 	// initLog
@@ -313,4 +316,6 @@ nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a
 
 	// initES
 
-	// runServer: kafka consuemr send message to ES, then Kibana
+	// runServer: kafka consuemr send message to ES, then we can use Kibana on web! ~~
+}
+```
