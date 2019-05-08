@@ -102,7 +102,15 @@ https://www.elastic.co/cn/products/kibana
 
 https://github.com/etcd-io/etcd/releases/
 
+## day13
 
+elastic search
+
+搜索引擎
+
+kibana:
+
+Kibana 是通向 Elastic 产品集的窗口。 它可以在 Elasticsearch 中对数据进行视觉探索和实时分析。 此视频非常适合 Kibana 的新手用户，如果您正在寻找关于数据探索，可视化和仪表盘的初级读本。 看看吴斌如何在几分钟内从 Kibana 安装到完整仪表板建设的演示。 
 
 
 
