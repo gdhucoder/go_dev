@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/astaxie/beego/logs"
+)
 
 func main() {
 
@@ -12,11 +16,12 @@ func main() {
 
 	fmt.Println(logConfig)
 
-	// // initLog
-	// err = initLogger()
-	// if err != nil {
-	// 	panic(err)
-	// }
+	// initLog
+	err = initLogger()
+	if err != nil {
+		panic(err)
+	}
+	logs.Info("init logger succ")
 	// // initKafkaConsuemr
 	// err = initKafka()
 	// if err != nil {
