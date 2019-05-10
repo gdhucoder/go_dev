@@ -13,7 +13,7 @@ var (
 	wg sync.WaitGroup
 )
 
-func main() {
+func initKafka() {
 
 	// localhost
 	consumer, err := sarama.NewConsumer(strings.Split("127.0.0.1:9092", ","), nil)
