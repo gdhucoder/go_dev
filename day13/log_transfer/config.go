@@ -11,6 +11,7 @@ type LogConfig struct {
 	ESAddr    string
 	LogPath   string
 	LogLevel  string
+	Topic     string
 }
 
 var (
@@ -34,6 +35,9 @@ func initConfig(configType, configPath string) (err error) {
 
 	kafkaAddr := conf.String("kafka::kafka_addr")
 	logConfig.KafkaAddr = kafkaAddr
+
+	topic := conf.String("kafka::topic")
+	logConfig.Topic = topic
 
 	esAddr := conf.String("es::es_addr")
 	logConfig.ESAddr = esAddr

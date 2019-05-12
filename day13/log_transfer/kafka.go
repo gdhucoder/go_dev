@@ -6,6 +6,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/astaxie/beego/logs"
+
 	"github.com/Shopify/sarama"
 )
 
@@ -13,15 +15,15 @@ var (
 	wg sync.WaitGroup
 )
 
-func initKafka() {
+func initKafka(addr, topic string) (err error) {
 
 	// localhost
-	consumer, err := sarama.NewConsumer(strings.Split("127.0.0.1:9092", ","), nil)
+	consumer, err := sarama.NewConsumer(strings.Split(addr, ","), nil)
 	if err != nil {
-		fmt.Printf("Failed to start consumer: %s", err)
+		logs.Error("Failed to start kafka: %s", err)
 		return
 	}
-	partitionList, err := consumer.Partitions("test") // topic name: test
+	partitionList, err := consumer.Partitions(topic) // topic name: test
 	if err != nil {
 		fmt.Println("Failed to get the list of partitions: ", err)
 		return

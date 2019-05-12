@@ -21,13 +21,14 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	logs.Info("init logger succ")
-	// // initKafkaConsuemr
-	// err = initKafka()
-	// if err != nil {
-	// 	logs.Error("init kafka err: %v", err)
-	// 	return
-	// }
+	logs.Debug("init logger succ")
+	// initKafkaConsuemr
+	err = initKafka(logConfig.KafkaAddr)
+	if err != nil {
+		logs.Error("init kafka err: %v", err)
+		return
+	}
+	logs.Debug("init kafka succ")
 	// // initES
 	// err = initES()
 	// if err != nil {
