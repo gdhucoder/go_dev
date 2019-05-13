@@ -35,6 +35,7 @@ func initKafka(addr, topic string) (err error) {
 			fmt.Printf("Failed to start consumer for partition %d: %s\n", partition, err)
 			return
 		}
+
 		defer pc.AsyncClose()
 		go func(pc sarama.PartitionConsumer) {
 			wg.Add(1) // wait group goroutine
