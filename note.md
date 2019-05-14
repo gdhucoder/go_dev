@@ -321,3 +321,16 @@ func main(){
 	// runServer: kafka consuemr send message to ES, then we can use Kibana on web! ~~
 }
 ```
+
+#### beego
+
+
+beego example
+
+```
+PS D:\project> go build D:\project\src\go_dev\day13\beego_example\main\
+PS D:\project> cd D:\project\src\go_dev\day13\beego_example\
+PS D:\project\src\go_dev\day13\beego_example> D:\project\main.exe
+2019/05/14 16:32:36.712 [I]  http server Running on http://:8080
+2019/05/14 16:32:39.351 [D]  enter index controller
+```
