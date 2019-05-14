@@ -2,3 +2,139 @@
 2019/05/14 13:48:37.224 [D]  init logger succ
 2019/05/14 13:48:37.265 [D]  init kafka succ
 2019/05/14 13:48:37.265 [D]  &{0xc0001624b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:07:01.656 [D]  init logger succ
+2019/05/14 14:07:01.667 [D]  init kafka succ
+2019/05/14 14:07:01.667 [D]  &{0xc000156180 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:07:06.670 [E]  connect es error <nil>
+2019/05/14 14:07:06.670 [E]  init ES err: health check timeout: no Elasticsearch node available
+2019/05/14 14:09:21.293 [D]  init logger succ
+2019/05/14 14:09:21.305 [D]  init kafka succ
+2019/05/14 14:09:21.306 [D]  &{0xc0000799b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:09:21.315 [D]  conn es succ
+2019/05/14 14:09:21.315 [D]  init ES succ
+2019/05/14 14:09:21.316 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:11:23.159 [D]  init logger succ
+2019/05/14 14:11:23.167 [D]  init kafka succ
+2019/05/14 14:11:23.167 [D]  &{0xc0001324b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:11:23.308 [D]  conn es succ
+2019/05/14 14:11:23.308 [D]  init ES succ
+2019/05/14 14:11:23.308 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:16:55.162 [D]  init logger succ
+2019/05/14 14:16:55.169 [D]  init kafka succ
+2019/05/14 14:16:55.169 [D]  &{0xc00013e4b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:16:55.180 [D]  conn es succ
+2019/05/14 14:16:55.180 [D]  init ES succ
+2019/05/14 14:16:55.180 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:16:55.233 [W]  warning, log transfer exited.
+2019/05/14 14:19:10.806 [D]  init logger succ
+2019/05/14 14:19:10.816 [D]  init kafka succ
+2019/05/14 14:19:10.817 [D]  &{0xc0001324b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:19:10.847 [D]  conn es succ
+2019/05/14 14:19:10.848 [D]  init ES succ
+2019/05/14 14:19:10.848 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:19:10.890 [W]  warning, log transfer exited.
+2019/05/14 14:20:43.413 [D]  init logger succ
+2019/05/14 14:20:43.419 [D]  init kafka succ
+2019/05/14 14:20:43.420 [D]  &{0xc0001324b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:20:43.430 [D]  conn es succ
+2019/05/14 14:20:43.430 [D]  init ES succ
+2019/05/14 14:20:43.430 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:20:43.430 [D]  in run
+2019/05/14 14:20:43.467 [W]  warning, log transfer exited.
+2019/05/14 14:35:49.304 [D]  init logger succ
+2019/05/14 14:35:49.313 [D]  init kafka succ
+2019/05/14 14:35:49.314 [D]  &{0xc000174180 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:35:49.322 [D]  conn es succ
+2019/05/14 14:35:49.322 [D]  init ES succ
+2019/05/14 14:35:49.322 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:35:49.322 [D]  in run
+2019/05/14 14:35:49.358 [W]  warning, log transfer exited.
+2019/05/14 14:38:16.437 [D]  init logger succ
+2019/05/14 14:38:16.443 [D]  init kafka succ
+2019/05/14 14:38:16.443 [D]  &{0xc0001324b0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:38:16.452 [D]  conn es succ
+2019/05/14 14:38:16.452 [D]  init ES succ
+2019/05/14 14:38:16.452 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:38:16.452 [D]  in run
+2019/05/14 14:38:16.477 [W]  warning, log transfer exited.
+2019/05/14 14:39:31.985 [D]  init logger succ
+2019/05/14 14:39:31.991 [D]  init kafka succ
+2019/05/14 14:39:31.991 [D]  &{0xc00014c180 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:39:31.998 [D]  conn es succ
+2019/05/14 14:39:31.998 [D]  init ES succ
+2019/05/14 14:39:31.998 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:39:31.998 [D]  in run
+2019/05/14 14:39:34.178 [D]  Partition:0, Offset:35186, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/169.254.34.53
+2019/05/14 14:39:39.184 [D]  Partition:0, Offset:35187, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/169.254.252.17
+2019/05/14 14:39:44.204 [D]  Partition:0, Offset:35188, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/172.17.183.1
+2019/05/14 14:39:49.229 [D]  Partition:0, Offset:35189, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/169.254.122.129
+2019/05/14 14:39:54.246 [D]  Partition:0, Offset:35190, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/172.26.66.1
+2019/05/14 14:39:59.250 [D]  Partition:0, Offset:35191, Key:, Value:2019/05/14 14:35:23.739 [D]  ectd is watching:  /logagent/config/192.168.31.224
+2019/05/14 14:40:04.253 [D]  Partition:0, Offset:35192, Key:, Value:2019/05/14 14:35:23.739 [D]  init etcd success!
+2019/05/14 14:40:09.260 [D]  Partition:0, Offset:35193, Key:, Value:2019/05/14 14:35:23.739 [D]  init tailf success!
+2019/05/14 14:40:14.275 [D]  Partition:0, Offset:35194, Key:, Value:2019/05/14 14:35:23.747 [D]  init Kafka succ!
+2019/05/14 14:40:19.280 [D]  Partition:0, Offset:35195, Key:, Value:2019/05/14 14:35:23.747 [D]  init kafka success!
+2019/05/14 14:40:24.286 [D]  Partition:0, Offset:35196, Key:, Value:2019/05/14 14:35:23.747 [D]  init all success!
+2019/05/14 14:40:29.300 [D]  Partition:0, Offset:35197, Key:, Value:2019/05/14 14:35:23.912 [D]  send succ: pid:0 offset:35136 topic:test
+2019/05/14 14:40:34.315 [D]  Partition:0, Offset:35198, Key:, Value:2019/05/14 14:35:28.915 [D]  send succ: pid:0 offset:35137 topic:test
+2019/05/14 14:40:39.321 [D]  Partition:0, Offset:35199, Key:, Value:2019/05/14 14:35:33.919 [D]  send succ: pid:0 offset:35138 topic:test
+2019/05/14 14:40:44.324 [D]  Partition:0, Offset:35200, Key:, Value:2019/05/14 14:35:38.922 [D]  send succ: pid:0 offset:35139 topic:test
+2019/05/14 14:40:49.329 [D]  Partition:0, Offset:35201, Key:, Value:2019/05/14 14:35:43.925 [D]  send succ: pid:0 offset:35140 topic:test
+2019/05/14 14:40:54.333 [D]  Partition:0, Offset:35202, Key:, Value:2019/05/14 14:35:48.947 [D]  send succ: pid:0 offset:35141 topic:test
+2019/05/14 14:40:59.348 [D]  Partition:0, Offset:35203, Key:, Value:2019/05/14 14:35:53.952 [D]  send succ: pid:0 offset:35142 topic:test
+2019/05/14 14:41:04.353 [D]  Partition:0, Offset:35204, Key:, Value:2019/05/14 14:35:58.960 [D]  send succ: pid:0 offset:35143 topic:test
+2019/05/14 14:41:09.366 [D]  Partition:0, Offset:35205, Key:, Value:2019/05/14 14:36:03.965 [D]  send succ: pid:0 offset:35144 topic:test
+2019/05/14 14:41:14.376 [D]  Partition:0, Offset:35206, Key:, Value:2019/05/14 14:36:08.968 [D]  send succ: pid:0 offset:35145 topic:test
+2019/05/14 14:41:19.382 [D]  Partition:0, Offset:35207, Key:, Value:2019/05/14 14:36:13.970 [D]  send succ: pid:0 offset:35146 topic:test
+2019/05/14 14:41:24.387 [D]  Partition:0, Offset:35208, Key:, Value:2019/05/14 14:36:18.974 [D]  send succ: pid:0 offset:35147 topic:test
+2019/05/14 14:41:29.389 [D]  Partition:0, Offset:35209, Key:, Value:2019/05/14 14:36:23.977 [D]  send succ: pid:0 offset:35148 topic:test
+2019/05/14 14:41:34.395 [D]  Partition:0, Offset:35210, Key:, Value:2019/05/14 14:36:28.982 [D]  send succ: pid:0 offset:35149 topic:test
+2019/05/14 14:41:39.398 [D]  Partition:0, Offset:35211, Key:, Value:2019/05/14 14:36:33.987 [D]  send succ: pid:0 offset:35150 topic:test
+2019/05/14 14:41:44.408 [D]  Partition:0, Offset:35212, Key:, Value:2019/05/14 14:36:38.991 [D]  send succ: pid:0 offset:35151 topic:test
+2019/05/14 14:41:49.411 [D]  Partition:0, Offset:35213, Key:, Value:2019/05/14 14:36:43.995 [D]  send succ: pid:0 offset:35152 topic:test
+2019/05/14 14:41:54.415 [D]  Partition:0, Offset:35214, Key:, Value:2019/05/14 14:36:48.997 [D]  send succ: pid:0 offset:35153 topic:test
+2019/05/14 14:41:59.419 [D]  Partition:0, Offset:35215, Key:, Value:2019/05/14 14:36:54.000 [D]  send succ: pid:0 offset:35154 topic:test
+2019/05/14 14:42:04.423 [D]  Partition:0, Offset:35216, Key:, Value:2019/05/14 14:36:59.005 [D]  send succ: pid:0 offset:35155 topic:test
+2019/05/14 14:42:09.428 [D]  Partition:0, Offset:35217, Key:, Value:2019/05/14 14:37:04.009 [D]  send succ: pid:0 offset:35156 topic:test
+2019/05/14 14:42:14.432 [D]  Partition:0, Offset:35218, Key:, Value:2019/05/14 14:37:09.040 [D]  send succ: pid:0 offset:35157 topic:test
+2019/05/14 14:42:19.439 [D]  Partition:0, Offset:35219, Key:, Value:2019/05/14 14:37:14.042 [D]  send succ: pid:0 offset:35158 topic:test
+2019/05/14 14:42:24.442 [D]  Partition:0, Offset:35220, Key:, Value:2019/05/14 14:37:19.045 [D]  send succ: pid:0 offset:35159 topic:test
+2019/05/14 14:42:29.445 [D]  Partition:0, Offset:35221, Key:, Value:2019/05/14 14:37:24.049 [D]  send succ: pid:0 offset:35160 topic:test
+2019/05/14 14:42:34.450 [D]  Partition:0, Offset:35222, Key:, Value:2019/05/14 14:37:29.065 [D]  send succ: pid:0 offset:35161 topic:test
+2019/05/14 14:42:39.454 [D]  Partition:0, Offset:35223, Key:, Value:2019/05/14 14:37:34.069 [D]  send succ: pid:0 offset:35162 topic:test
+2019/05/14 14:42:44.458 [D]  Partition:0, Offset:35224, Key:, Value:2019/05/14 14:37:39.071 [D]  send succ: pid:0 offset:35163 topic:test
+2019/05/14 14:42:49.460 [D]  Partition:0, Offset:35225, Key:, Value:2019/05/14 14:37:44.072 [D]  send succ: pid:0 offset:35164 topic:test
+2019/05/14 14:42:54.464 [D]  Partition:0, Offset:35226, Key:, Value:2019/05/14 14:37:49.076 [D]  send succ: pid:0 offset:35165 topic:test
+2019/05/14 14:42:59.469 [D]  Partition:0, Offset:35227, Key:, Value:2019/05/14 14:37:54.082 [D]  send succ: pid:0 offset:35166 topic:test
+2019/05/14 14:43:04.473 [D]  Partition:0, Offset:35228, Key:, Value:2019/05/14 14:37:59.084 [D]  send succ: pid:0 offset:35167 topic:test
+2019/05/14 14:43:09.477 [D]  Partition:0, Offset:35229, Key:, Value:2019/05/14 14:38:04.089 [D]  send succ: pid:0 offset:35168 topic:test
+2019/05/14 14:43:14.481 [D]  Partition:0, Offset:35230, Key:, Value:2019/05/14 14:38:09.092 [D]  send succ: pid:0 offset:35169 topic:test
+2019/05/14 14:43:19.485 [D]  Partition:0, Offset:35231, Key:, Value:2019/05/14 14:38:14.098 [D]  send succ: pid:0 offset:35170 topic:test
+2019/05/14 14:43:24.489 [D]  Partition:0, Offset:35232, Key:, Value:2019/05/14 14:38:19.106 [D]  send succ: pid:0 offset:35171 topic:test
+2019/05/14 14:43:29.491 [D]  Partition:0, Offset:35233, Key:, Value:2019/05/14 14:38:24.111 [D]  send succ: pid:0 offset:35172 topic:test
+2019/05/14 14:43:34.493 [D]  Partition:0, Offset:35234, Key:, Value:2019/05/14 14:38:29.114 [D]  send succ: pid:0 offset:35173 topic:test
+2019/05/14 14:43:39.515 [D]  Partition:0, Offset:35235, Key:, Value:2019/05/14 14:38:34.116 [D]  send succ: pid:0 offset:35174 topic:test
+2019/05/14 14:43:44.521 [D]  Partition:0, Offset:35236, Key:, Value:2019/05/14 14:38:39.119 [D]  send succ: pid:0 offset:35175 topic:test
+2019/05/14 14:43:49.525 [D]  Partition:0, Offset:35237, Key:, Value:2019/05/14 14:38:44.121 [D]  send succ: pid:0 offset:35176 topic:test
+2019/05/14 14:43:54.531 [D]  Partition:0, Offset:35238, Key:, Value:2019/05/14 14:38:49.124 [D]  send succ: pid:0 offset:35177 topic:test
+2019/05/14 14:43:59.536 [D]  Partition:0, Offset:35239, Key:, Value:2019/05/14 14:38:54.128 [D]  send succ: pid:0 offset:35178 topic:test
+2019/05/14 14:44:04.538 [D]  Partition:0, Offset:35240, Key:, Value:2019/05/14 14:38:59.131 [D]  send succ: pid:0 offset:35179 topic:test
+2019/05/14 14:44:09.547 [D]  Partition:0, Offset:35241, Key:, Value:2019/05/14 14:39:04.134 [D]  send succ: pid:0 offset:35180 topic:test
+2019/05/14 14:44:14.551 [D]  Partition:0, Offset:35242, Key:, Value:2019/05/14 14:39:09.138 [D]  send succ: pid:0 offset:35181 topic:test
+2019/05/14 14:44:19.554 [D]  Partition:0, Offset:35243, Key:, Value:2019/05/14 14:39:14.141 [D]  send succ: pid:0 offset:35182 topic:test
+2019/05/14 14:44:24.559 [D]  Partition:0, Offset:35244, Key:, Value:2019/05/14 14:39:19.149 [D]  send succ: pid:0 offset:35183 topic:test
+2019/05/14 14:44:29.564 [D]  Partition:0, Offset:35245, Key:, Value:2019/05/14 14:39:24.158 [D]  send succ: pid:0 offset:35184 topic:test
+2019/05/14 14:44:34.572 [D]  Partition:0, Offset:35246, Key:, Value:2019/05/14 14:39:29.162 [D]  send succ: pid:0 offset:35185 topic:test
+2019/05/14 14:44:39.578 [D]  Partition:0, Offset:35247, Key:, Value:2019/05/14 14:39:34.180 [D]  send succ: pid:0 offset:35186 topic:test
+2019/05/14 14:44:44.581 [D]  Partition:0, Offset:35248, Key:, Value:2019/05/14 14:39:39.184 [D]  send succ: pid:0 offset:35187 topic:test
+2019/05/14 14:44:49.587 [D]  Partition:0, Offset:35249, Key:, Value:2019/05/14 14:39:44.205 [D]  send succ: pid:0 offset:35188 topic:test
+2019/05/14 14:44:54.591 [D]  Partition:0, Offset:35250, Key:, Value:2019/05/14 14:39:49.241 [D]  send succ: pid:0 offset:35189 topic:test
+2019/05/14 14:44:59.596 [D]  Partition:0, Offset:35251, Key:, Value:2019/05/14 14:39:54.246 [D]  send succ: pid:0 offset:35190 topic:test
+2019/05/14 14:45:15.426 [D]  init logger succ
+2019/05/14 14:45:15.431 [D]  init kafka succ
+2019/05/14 14:45:15.431 [D]  &{0xc000079cb0 127.0.0.1:9092 test {{} [0 0 0]}}
+2019/05/14 14:45:15.439 [D]  conn es succ
+2019/05/14 14:45:15.439 [D]  init ES succ
+2019/05/14 14:45:15.439 [D]  http://127.0.0.1:9200 [dead=false,failures=0,deadSince=<nil>]
+2019/05/14 14:45:15.439 [D]  in run
+2019/05/14 14:45:15.469 [W]  warning, log transfer exited.

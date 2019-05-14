@@ -30,17 +30,19 @@ func main() {
 	}
 	logs.Debug("init kafka succ")
 	logs.Debug(kafkaClient)
-	// // initES
-	// err = initES()
-	// if err != nil {
-	// 	logs.Error("init ES err: %v", err)
-	// 	return
-	// }
+	// initES
+	err = initES(logConfig.ESAddr)
+	if err != nil {
+		logs.Error("init ES err: %v", err)
+		return
+	}
+	logs.Debug("init ES succ")
+	logs.Debug(esClient)
 	// // runServer: kafka consuemr send message to ES, then Kibana
-	// err = run()
-	// if err != nil {
-	// 	logs.Error("run failed, err: %v", err)
-	// 	return
-	// }
-	// logs.Warn("warning, log transfer exited.")
+	err = run()
+	if err != nil {
+		logs.Error("run failed, err: %v", err)
+		return
+	}
+	logs.Warn("warning, log transfer exited.")
 }

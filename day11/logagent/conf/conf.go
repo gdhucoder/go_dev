@@ -32,14 +32,14 @@ func InitConf(configType, configPath string) (err error) {
 		return
 	}
 
-	logPath := conf.String("server::log_path")
+	logPath := conf.String("log::log_path")
 	if len(logPath) == 0 {
 		panic("log path is not defined!")
 	}
 
 	AppConfig = &Config{}
 	AppConfig.LogPath = logPath
-	logLevel := conf.String("server::log_level")
+	logLevel := conf.String("log::log_level")
 	AppConfig.LogLevel = logLevel
 	kafkaAddr := conf.String("kafka::kafka_addr")
 	AppConfig.KafkaAddr = kafkaAddr

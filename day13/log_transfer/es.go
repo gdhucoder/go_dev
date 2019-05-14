@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"fmt"
 
+	"github.com/astaxie/beego/logs"
 	elastic "github.com/olivere/elastic"
 )
 
@@ -13,36 +13,31 @@ type LogMessage struct {
 	Message string
 }
 
-type Tweet struct {
-	User    string
-	Message string
-}
+var (
+	esClient *elastic.Client
+)
 
-func initES() {
-	ctx := context.Background()
-	client, err := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL("http://127.0.0.1:9200/"))
-	if err != nil {
-		fmt.Println("connect es error", err)
+func initES(addr string) (err error) {
+	client, errRt := elastic.NewClient(elastic.SetSniff(false), elastic.SetURL(addr))
+	if errRt != nil {
+		logs.Error("connect es error", err)
+		err = errRt
 		return
 	}
+	esClient = client
+	logs.Debug("conn es succ")
+	return
+}
 
-	fmt.Println("conn es succ")
-
-	var count = 10000
-	for i := 2; i < count; i++ {
-		tweet := Tweet{User: "olivere", Message: "Take Five"}
-		_, err = client.Index().
-			Index("twitter").
-			Type("tweet").
-			Id(fmt.Sprintf("%d", i)).
-			BodyJson(tweet).
-			Do(ctx)
-		if err != nil {
-			// Handle error
-			panic(err)
-			return
-		}
+func sendToES(topic string, data []byte) (err error) {
+	ctx := context.Background()
+	msg := &LogMessage{}
+	msg.Topic = topic
+	msg.Message = string(data)
+	_, err = esClient.Index().Index(topic).Type(topic).BodyJson(msg).Do(ctx)
+	if err != nil {
+		panic(err)
+		return
 	}
-
-	fmt.Println("insert succ")
+	return
 }
