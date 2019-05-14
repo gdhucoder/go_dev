@@ -23,12 +23,13 @@ func main() {
 	}
 	logs.Debug("init logger succ")
 	// initKafkaConsuemr
-	err = initKafka(logConfig.KafkaAddr)
+	err = initKafka(logConfig.KafkaAddr, logConfig.Topic)
 	if err != nil {
 		logs.Error("init kafka err: %v", err)
 		return
 	}
 	logs.Debug("init kafka succ")
+	logs.Debug(kafkaClient)
 	// // initES
 	// err = initES()
 	// if err != nil {
