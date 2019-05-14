@@ -333,4 +333,16 @@ PS D:\project> cd D:\project\src\go_dev\day13\beego_example\
 PS D:\project\src\go_dev\day13\beego_example> D:\project\main.exe
 2019/05/14 16:32:36.712 [I]  http server Running on http://:8080
 2019/05/14 16:32:39.351 [D]  enter index controller
+
+html文件的位置
+PS D:\project\src\go_dev\day13\beego_example> go build D:\project\src\go_dev\day13\beego_example\main\
+PS D:\project\src\go_dev\day13\beego_example> D:\project\main.exe
 ```
+
+![2019-05-14-001](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-001.jpg)
+
+![2019-05-14-002](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-002.jpg)
+
+![2019-05-14-003](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-003.jpg)
+
+![2019-05-14-004](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-004.jpg)
