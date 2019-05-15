@@ -346,3 +346,14 @@ PS D:\project\src\go_dev\day13\beego_example> D:\project\main.exe
 ![2019-05-14-003](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-003.jpg)
 
 ![2019-05-14-004](https://gitee.com/gdhu/prvpic/raw/master/2019-05-14-004.jpg)
+
+#### 秒杀系统
+
+```
+切换目录
+PS D:\project> cd D:\project\src\go_dev\day14\SecKill\SecProxy\
+build
+PS D:\project\src\go_dev\day14\SecKill\SecProxy> go build D:\project\src\go_dev\day14\SecKill\SecProxy\main
+执行
+PS D:\project\src\go_dev\day14\SecKill\SecProxy> .\main.exe
+```
