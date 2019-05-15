@@ -118,6 +118,18 @@ elastic search介绍和使用
 
 context
 
+## day14
+
+秒杀系统
+
+- 系统解耦
+
+- 过载保护
+
+- 降级预案
+
+![系统设计](https://gitee.com/gdhu/prvpic/raw/master/2019-05-15-001.jpg)
+
 
 
 :bear::whale::dolphin:
