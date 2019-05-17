@@ -7,6 +7,8 @@ import (
 )
 
 func init() {
+	// 秒杀 second kill
 	beego.Router("/seckill", &controller.SkillController{}, "*:SecKill")
+	// 秒杀信息 info
 	beego.Router("/secinfo", &controller.SkillController{}, "*:SecInfo")
 }

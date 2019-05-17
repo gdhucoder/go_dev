@@ -130,7 +130,9 @@ context
 
 ![系统设计](https://gitee.com/gdhu/prvpic/raw/master/2019-05-15-001.jpg)
 
+redis windows版本，已经不更新了
 
+https://github.com/MicrosoftArchive/redis/releases
 
 :bear::whale::dolphin:
 
