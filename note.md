@@ -357,3 +357,9 @@ PS D:\project\src\go_dev\day14\SecKill\SecProxy> go build D:\project\src\go_dev\
 执行
 PS D:\project\src\go_dev\day14\SecKill\SecProxy> .\main.exe
 ```
+
+#### 安装redis
+
+https://github.com/MicrosoftArchive/redis/releases
+
+参考：[简书连接](https://www.jianshu.com/p/e16d23e358c0)
